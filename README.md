@@ -11,10 +11,13 @@ This repository continues the history of `vlc-tokyo-night-skin` and brings the r
 | [Codex desktop](codex/) | Theme imports and optional CSS divider launcher in `divider-test/` |
 | [Windows Terminal and Bash](terminal/) | ANSI palette, PowerShell input colors, Starship prompt, and minimal ble.sh configuration |
 | [Zen Browser](zen/) | Browser chrome CSS, install/restore scripts, and preview screenshots |
+| [Dark Reader](darkreader/) | General TRON web-content preset for Zen, CSS accents, and export-preserving import helper |
 | [Wallpapers](wallpapers/) | Shanghai TRON wallpaper variants, accepted image, grading scripts, and previews |
 | [ENCOM boardroom](https://github.com/ChromedomeV12/encom-boardroom) | Git submodule pointing to the existing fork, with its own history and upstream relationship |
 
 ## Previews
+
+Future project notes: [eDEX-UI desktop utility, community forks, and tablet possibilities](research/edex-ui.md).
 
 ![TRON VLC](vlc/docs/preview.png)
 

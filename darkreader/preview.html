@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRON / Dark Reader fixture</title>
+<style>
+* { box-sizing: border-box; } body { margin:0; background:white; color:#222; font:16px/1.65 system-ui,sans-serif; }
+header { padding:22px 38px; border-bottom:1px solid #ccc; display:flex; justify-content:space-between; }
+main { max-width:1120px; margin:auto; padding:40px; display:grid; grid-template-columns:220px 1fr; gap:42px; }
+aside { border-right:1px solid #ccc; padding-right:28px; } aside a { display:block; padding:8px 0; }
+h1 { font-size:36px; line-height:1.2; margin:8px 0 20px; } h2 { font-size:22px; margin:28px 0 8px; }
+p { margin:12px 0; } a { color:#125dae; } .eyebrow { font-size:12px; letter-spacing:2px; color:#555; }
+hr { border:0; height:1px; background:#ccc; margin:26px 0; }
+code,kbd { font:14px/1.6 monospace; background:#eee; padding:2px 6px; border-radius:4px; }
+pre { padding:18px; background:#eee; border-radius:8px; } pre code { padding:0; } .token { color:#8250df; }
+table { border-collapse:collapse; width:100%; } th,td { text-align:left; padding:12px; border-bottom:1px solid #ddd; }
+input[type=text],button { font:inherit; padding:8px 14px; border:1px solid #bbb; border-radius:6px; background:#eee; color:#222; }
+label { margin-right:20px; } footer { margin-top:28px; padding-top:18px; border-top:1px solid #ccc; font-size:13px; color:#555; }
+mark { background:yellow; } #media { width:90px; height:10px; }
+</style></head><body>
+<header><strong>ENCOM / WEB SYSTEMS</strong><span>TRON · Dark Reader</span></header>
+<main><aside><p class="eyebrow">DIRECTORY</p><a href="#overview">Overview</a><a href="#roles">Color roles</a><a href="#controls">Controls</a><p>Light-page fixture rendered through Dark Reader’s Dynamic engine.</p></aside>
+<article><p class="eyebrow">GENERAL WEB PRESET / 01</p><h1 id="overview">ENCOM<br>Network interface</h1>
+<p>Soft-white reading text, blue links, and cyan section boundaries. Follow the <a id="link" href="#roles">configuration reference</a> or use <code id="inline">tron.enable</code> to identify an inline accent.</p><hr>
+<h2 id="roles">Color roles</h2><table><thead><tr><th>Element</th><th>Signal</th></tr></thead><tbody><tr><td>Headings and dividers</td><td>Cyan / neon blue</td></tr><tr><td>Inline code and hover</td><td>Orange</td></tr><tr><td>Occasional emphasis</td><td><mark id="mark">Yellow highlight</mark></td></tr></tbody></table>
+<h2>Keep the website intact</h2><p>Code blocks keep their own syntax palette. Images retain the same treatment as the base Dark Reader theme.</p>
+<pre><code><span class="token" id="token">const</span> message = "Greetings, program.";</code></pre>
+<img id="media" alt="Media preservation sample" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='10'%3E%3Crect width='30' height='10' fill='%232980b9'/%3E%3Crect x='30' width='30' height='10' fill='%23e67e22'/%3E%3Crect x='60' width='30' height='10' fill='%238e44ad'/%3E%3C/svg%3E">
+<h2 id="controls">Controls</h2><p><label><input type="checkbox" checked> Dynamic mode</label><label><input type="radio" checked> TRON</label></p>
+<input id="field" type="text" aria-label="Example input" placeholder="Search the grid"><button id="button" type="button">Connect</button>
+<footer>Demonstration page · Existing layout and borders preserved · No animation or glow filters</footer>
+</article></main></body></html>

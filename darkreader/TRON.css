@@ -1,0 +1,83 @@
+/* TRONstyleStuff:BEGIN */
+/* Dynamic Theme CSS overlay. Insert into the existing global (*) CSS section.
+   Keep Dark Reader's other fixes. See README.md or use prepare.py.
+   These selectors deliberately leave layout, media, and code-token colors alone. */
+@media screen and (forced-colors: none) {
+    html[data-darkreader-scheme="dark"] {
+        --tron-ink: #d8e1dd;
+        --tron-cyan: #00eeee;
+        --tron-blue: #6fc3df;
+        --tron-orange: #ff8c1a;
+        --tron-yellow: #ffd166;
+        --tron-line: #217583;
+        --tron-selection: #183c66;
+        scrollbar-color: #287a9b #050e14 !important;
+    }
+
+    html[data-darkreader-scheme="dark"] ::selection {
+        color: var(--tron-ink) !important;
+        background-color: var(--tron-selection) !important;
+    }
+
+    html[data-darkreader-scheme="dark"] a:link:not([role="button"]) {
+        color: var(--tron-blue) !important;
+        text-decoration-color: #287a9b !important;
+    }
+
+    html[data-darkreader-scheme="dark"] a:visited:not([role="button"]) {
+        color: #b6a4d8 !important;
+    }
+
+    html[data-darkreader-scheme="dark"] a[href]:hover:not([role="button"]) {
+        color: var(--tron-orange) !important;
+        text-decoration-color: var(--tron-orange) !important;
+    }
+
+    html[data-darkreader-scheme="dark"] :is(h1, [role="heading"][aria-level="1"]) {
+        color: var(--tron-ink) !important;
+    }
+
+    html[data-darkreader-scheme="dark"] :is(h2, h3, h4, h5, h6,
+        [role="heading"][aria-level="2"], [role="heading"][aria-level="3"],
+        [role="heading"][aria-level="4"], [role="heading"][aria-level="5"],
+        [role="heading"][aria-level="6"]) {
+        color: var(--tron-cyan) !important;
+    }
+
+    html[data-darkreader-scheme="dark"] :is(h1, h2, h3, h4, h5, h6) > a[href] {
+        color: inherit !important;
+    }
+
+    html[data-darkreader-scheme="dark"] :is(hr, fieldset, th, td, blockquote,
+        header, footer, nav, aside, [role="separator"]) {
+        border-color: var(--tron-line) !important;
+    }
+
+    html[data-darkreader-scheme="dark"] hr {
+        background-color: var(--tron-cyan) !important;
+        border-color: var(--tron-cyan) !important;
+    }
+
+    html[data-darkreader-scheme="dark"] :is(code, kbd, samp):not(pre *) {
+        color: var(--tron-orange) !important;
+        background-color: #21170e !important;
+        border-color: #875025 !important;
+    }
+
+    html[data-darkreader-scheme="dark"] mark {
+        color: var(--tron-yellow) !important;
+        background-color: #382a0b !important;
+    }
+
+    html[data-darkreader-scheme="dark"] :is(input[type="checkbox"],
+        input[type="radio"], input[type="range"], progress) {
+        accent-color: var(--tron-cyan) !important;
+    }
+
+    html[data-darkreader-scheme="dark"] :is(a[href], button, input,
+        textarea, select, summary, [tabindex]):focus-visible {
+        outline: 2px solid var(--tron-cyan) !important;
+        outline-offset: 2px !important;
+    }
+}
+/* TRONstyleStuff:END */

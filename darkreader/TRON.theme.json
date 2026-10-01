@@ -1,0 +1,13 @@
+{
+  "mode": 1,
+  "engine": "dynamicTheme",
+  "brightness": 100,
+  "contrast": 100,
+  "grayscale": 0,
+  "sepia": 0,
+  "darkSchemeBackgroundColor": "#050E14",
+  "darkSchemeTextColor": "#D8E1DD",
+  "darkColorScheme": "Default",
+  "selectionColor": "#183C66",
+  "scrollbarColor": "#287A9B"
+}
