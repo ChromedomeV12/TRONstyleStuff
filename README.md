@@ -12,7 +12,7 @@ This repository continues the history of `vlc-tokyo-night-skin` and brings the r
 | [Windows Terminal and Bash](terminal/) | ANSI palette, PowerShell input colors, Starship prompt, and minimal ble.sh configuration |
 | [Zen Browser](zen/) | Browser chrome CSS, install/restore scripts, and preview screenshots |
 | [Wallpapers](wallpapers/) | Shanghai TRON wallpaper variants, accepted image, grading scripts, and previews |
-| [ENCOM boardroom](encom-boardroom/) | Snapshot of the existing public boardroom/blog project |
+| [ENCOM boardroom](https://github.com/ChromedomeV12/encom-boardroom) | Git submodule pointing to the existing fork, with its own history and upstream relationship |
 
 ## Previews
 
@@ -25,6 +25,8 @@ The full-resolution accepted wallpaper is [shanghai-tron-uprising.png](wallpaper
 ## Working on the collection
 
 Each project keeps its own build or installation instructions. Installing one does not install the others. Personal profiles, installation manifests, backups, browser data, and debug logs are excluded. Existing installations and original workspaces are separate from this source collection.
+
+ENCOM remains maintained in its [separate fork](https://github.com/ChromedomeV12/encom-boardroom). This collection records a specific commit through the `encom-boardroom/` submodule. To include its checkout, clone with `git clone --recurse-submodules https://github.com/ChromedomeV12/TRONstyleStuff.git`, or run `git submodule update --init --recursive` in an existing clone. Make and publish ENCOM changes in its own repository, then update the submodule pointer here when appropriate.
 
 The terminal roles are deliberate: commands and keywords blue; ordinary input and strings soft white; numbers/types orange; yellow used sparingly. Preserve the accepted Bash startup behavior and performance when adjusting colors.
 

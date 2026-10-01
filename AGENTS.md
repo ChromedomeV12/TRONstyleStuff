@@ -8,7 +8,7 @@ Keep personal profiles, installation manifests, backup paths, browser data, debu
 
 VLC: run `python tools/build_visualizations.py`, `python tools/build_skin.py`, and `python tools/test_timed_playlist.py` from `vlc/` after relevant changes. Preserve playback, resizing, seeking, and visualization behavior.
 
-ENCOM: follow its nested AGENTS.md and preserve the original animations. Its separate public repository/deployment remains independent of this snapshot.
+ENCOM is a Git submodule of the existing ChromedomeV12/encom-boardroom fork, with independent history, upstream relationship, and deployment. Follow its nested AGENTS.md and preserve the original animations. Make and publish ENCOM changes in its own repository; update the collection's submodule pointer separately when appropriate. Do not replace it with a vendored source copy.
 
 Wallpapers: `wallpapers/outputs/shanghai-tron-uprising.png` is the accepted full-resolution 28% variation image. Do not regenerate or replace it incidentally when adjusting documentation or other applications.
 

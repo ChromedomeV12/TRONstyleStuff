@@ -1,0 +1,3 @@
+[submodule "encom-boardroom"]
+	path = encom-boardroom
+	url = https://github.com/ChromedomeV12/encom-boardroom.git
