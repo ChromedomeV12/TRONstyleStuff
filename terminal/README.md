@@ -32,3 +32,13 @@ These fragments intentionally remove Windows drive directories from the interact
 `TRON_BASH_HIGHLIGHT=0 bash` skips the add-on in a child shell; that shell still inherits its parent's current PATH. Existing fastfetch and Ubuntu Starship configurations are not included or modified. Personal backup paths and installation records remain in the original local workspace.
 
 The recorded PTY trial in `linux/performance-trial.md` measured typing at about 14-15 ms median and 29-31 ms p95. These are historical measurements, not a guarantee for another machine.
+
+## Remote SSH / Mosh shells
+
+The add-on and color configuration must also exist on the remote host. The local Ubuntu `.bashrc` does not configure the Bash process running there.
+
+Use `linux/remote-bashrc-header.sh` before the remote prompt/key-binding initialization and `linux/remote-bashrc-footer.sh` at the end of its `.bashrc`. These fragments use the same ble.sh and color-config paths as above and **do not filter PATH**. Keep the existing interactive-shell guard and login-profile handling. Back up `.bashrc` before merging; do not append duplicate hooks.
+
+The remote Omarchy setup was checked on 2026-10-01: Bash 5.3.15, Mosh server 1.4.0, existing Omarchy/Starship initialization preserved. Interactive login-shell tests confirmed blue commands, soft-white strings, command execution, working fzf registration, the opt-out switch, and identical PATH with/without the add-on. Approximate server-side PTY typing response was 17 ms median and 28 ms maximum; this excludes network latency.
+
+Reconnect after installing. Existing remote shells retain their old initialization. Mosh's predicted local echo can briefly show a character before the remote highlighter recolors it. Mosh 1.4.0 added true-color support; older versions may render the RGB palette differently. See [Mosh](https://mosh.org/) and [ble.sh installation instructions](https://github.com/akinomyoga/ble.sh#13-set-up-bashrc).
