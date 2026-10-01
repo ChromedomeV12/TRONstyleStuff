@@ -1,0 +1,66 @@
+/* Session-only ENCOM shell. Decorative overlays never receive pointer input. */
+:root[data-theme="dark"] {
+  --app-color-border: rgba(0, 238, 238, 0.28) !important;
+  --app-color-border-light: rgba(0, 238, 238, 0.16) !important;
+  --app-color-border-heavy: rgba(0, 238, 238, 0.44) !important;
+  --color-border: rgba(0, 238, 238, 0.28) !important;
+  --color-border-subtle: rgba(0, 238, 238, 0.16) !important;
+  --color-border-strong: rgba(0, 238, 238, 0.44) !important;
+}
+:root[data-theme="dark"] [data-app-shell-frame]::before,
+:root[data-theme="dark"] [data-app-shell-frame]::after {
+  content: "";
+  position: fixed;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 100;
+}
+:root[data-theme="dark"] [data-app-shell-frame]::before {
+  inset: 0;
+  border: 1px solid rgba(0, 238, 238, 0.7);
+  border-radius: 12px;
+}
+:root[data-theme="dark"] [data-app-shell-frame]::after {
+  inset: 4px;
+  border: 1px solid rgba(0, 238, 238, 0.24);
+  border-radius: 8px;
+}
+:root[data-theme="dark"] [data-app-shell-sidebar-open="true"] .app-shell-left-panel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  width: 1px;
+  background: rgba(0, 238, 238, 0.65);
+  box-shadow: -4px 0 0 rgba(0, 238, 238, 0.24);
+  pointer-events: none;
+  z-index: 2;
+}
+:root[data-theme="dark"] [data-app-shell-thread-edge-divider="true"] {
+  border-top-color: rgba(0, 238, 238, 0.4) !important;
+}
+:root[data-theme="dark"] [data-app-shell-main-titlebar]::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 238, 238, 0.4);
+  box-shadow: 0 -4px 0 rgba(0, 238, 238, 0.18);
+  pointer-events: none;
+  z-index: 2;
+}
+:root[data-theme="dark"] [data-codex-composer-root] [data-composer-surface-variant="default"] {
+  box-shadow: inset 0 0 0 1px rgba(0, 238, 238, 0.45) !important;
+}
+:root[data-theme="dark"] [data-codex-composer-root] [data-composer-surface-variant="default"]:focus-within {
+  box-shadow: inset 0 0 0 1px rgba(0, 238, 238, 0.8) !important;
+}
+:root[data-theme="dark"] [data-app-action-sidebar-section-heading] {
+  box-shadow: inset 0 1px 0 rgba(0, 238, 238, 0.26);
+}
+:root[data-theme="dark"] [data-markdown-copy="code-block"] {
+  border-color: rgba(0, 238, 238, 0.24) !important;
+}

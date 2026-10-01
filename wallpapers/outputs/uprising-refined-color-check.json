@@ -1,0 +1,16 @@
+{
+  "dimensions": [
+    4704,
+    3136
+  ],
+  "profile": "sRGB IEC61966-2.1",
+  "method": "Color and tone adjustments only, original image geometry and texture retained. Hue variations follow original colors, including their existing reflections.",
+  "light_shoulder_max_reduction_percent": 12,
+  "bright_pixel_mean_reduction_percent": 10.79,
+  "colored_midtone_hue_percentiles_degrees": {
+    "10": 195.91,
+    "50": 199.88,
+    "90": 202.13
+  },
+  "verification": "Saved PNG reopened and checked for exact dimensions, sRGB tagging and unchanged saved pixel values."
+}

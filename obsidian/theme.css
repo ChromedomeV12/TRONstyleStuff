@@ -1,0 +1,388 @@
+/* Tron Grid 0.3.4 — ENCOM edition, informed by the user’s ENCOM Archive OS project.
+   MIT. No assets, remote fonts, JavaScript, or plugins required.
+   Dark appearance is the designed experience; light uses Obsidian defaults.
+*/
+
+/* @settings
+name: Tron Grid
+id: tron-grid
+settings:
+  - id: tron-grid-quiet
+    title: Disable neon glow
+    description: Keep cyan edges without the soft glow on active controls.
+    type: class-toggle
+    default: false
+  - id: tron-grid-mono-notes
+    title: Monospaced notes
+    description: Match the Inconsolata-style archive reader, using installed fonts.
+    type: class-toggle
+    default: false
+  - id: tron-grid-rounded
+    title: Softer corners
+    description: Relax the default ENCOM square panel treatment.
+    type: class-toggle
+    default: false
+*/
+
+body.theme-dark {
+  /* Portable palette: shared with palette.json for the future Codex port. */
+  --grid-black: #000000;
+  --grid-bg: #030708;
+  --grid-panel: #071113;
+  --grid-raised: #102024;
+  --grid-border: #244044;
+  --grid-frame: #6fc0ba;
+  --grid-text: #d8e1dd;
+  --grid-muted: #a0b8b6;
+  --grid-faint: #829c9b;
+  --grid-cyan: #00eeee;
+  --grid-blue: #69b7ff;
+  --grid-orange: #ff8c1a;
+  --grid-yellow: #ffe600;
+  /* Vivid inline accents, with the existing role names retained. */
+  --grid-gold: #ffe600;
+  --grid-amber: #ff8c1a;
+  --grid-glow: 0 0 12px #00eeee26;
+
+  --color-base-00: var(--grid-bg);
+  --color-base-05: #050c0e;
+  --color-base-10: var(--grid-panel);
+  --color-base-20: var(--grid-raised);
+  --color-base-25: #142c30;
+  --color-base-30: var(--grid-border);
+  --color-base-35: #3a6768;
+  --color-base-40: #527c7b;
+  --color-base-50: var(--grid-faint);
+  --color-base-60: var(--grid-muted);
+  --color-base-70: #afc6d4;
+  --color-base-100: var(--grid-text);
+  --color-accent: var(--grid-cyan);
+  --color-accent-1: #78eeff;
+  --color-accent-2: #a4f5ff;
+  --accent-h: 180;
+  --accent-s: 100%;
+  --accent-l: 47%;
+  --color-red: #ff8595;
+  --color-orange: var(--grid-orange);
+  --color-yellow: var(--grid-yellow);
+  --color-green: #81ddbe;
+  --color-cyan: var(--grid-cyan);
+  --color-blue: var(--grid-blue);
+  --color-purple: #b9bbff;
+  --color-pink: #f4a5d7;
+
+  --background-primary: var(--grid-bg);
+  --background-primary-alt: #050c0e;
+  --background-secondary: var(--grid-black);
+  --background-secondary-alt: var(--grid-panel);
+  --background-modifier-hover: #00eeee0d;
+  --background-modifier-active-hover: #00eeee18;
+  --background-modifier-border: var(--grid-border);
+  --background-modifier-border-hover: #4c7979;
+  --background-modifier-border-focus: var(--grid-cyan);
+  --background-modifier-form-field: #061014;
+  --background-modifier-box-shadow: #00000066;
+  --background-modifier-cover: #02050bbd;
+  --background-modifier-success: #163b35;
+  --background-modifier-error: #492230;
+  --background-modifier-error-hover: #633043;
+  --text-normal: var(--grid-text);
+  --text-muted: var(--grid-muted);
+  --text-faint: var(--grid-faint);
+  --text-on-accent: #041017;
+  --text-on-accent-inverted: var(--grid-text);
+  --text-accent: var(--grid-cyan);
+  --text-accent-hover: #b4f7ff;
+  --text-error: var(--color-red);
+  --text-warning: var(--grid-orange);
+  --text-success: var(--color-green);
+  --text-selection: #00eeee30;
+  --text-highlight-bg: #ffe60030;
+  --interactive-normal: var(--grid-panel);
+  --interactive-hover: var(--grid-raised);
+  --interactive-accent: var(--grid-cyan);
+  --interactive-accent-hover: #91f1ff;
+
+  --font-interface-theme: "Inconsolata", "Cascadia Mono", Consolas, monospace;
+  --font-text-theme: "Segoe UI", "Inter", sans-serif;
+  --font-monospace-theme: "Inconsolata", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  --line-height-normal: 1.65;
+  --file-line-width: 760px;
+  --radius-s: 0px;
+  --radius-m: 1px;
+  --radius-l: 2px;
+  --input-radius: 1px;
+  --tab-radius: 1px;
+  --checkbox-radius: 1px;
+  --modal-radius: 2px;
+  --modal-border-color: #3a6768;
+  --prompt-border-color: #3a6768;
+  --prompt-background: var(--grid-panel);
+
+  --titlebar-background: var(--grid-black);
+  --titlebar-background-focused: var(--grid-black);
+  --titlebar-text-color-focused: var(--grid-text);
+  --ribbon-background: var(--grid-black);
+  --ribbon-background-collapsed: var(--grid-black);
+  --tab-container-background: var(--grid-black);
+  --tab-background-active: var(--grid-bg);
+  --tab-text-color: var(--grid-muted);
+  --tab-text-color-active: var(--grid-cyan);
+  --tab-text-color-focused-active: var(--grid-cyan);
+  --tab-text-color-focused-active-current: var(--grid-cyan);
+  --tab-outline-color: var(--grid-border);
+  --divider-color: #1d2c33;
+  --divider-color-hover: var(--grid-cyan);
+  --nav-item-color: var(--grid-muted);
+  --nav-item-color-hover: var(--grid-text);
+  --nav-item-color-active: var(--grid-cyan);
+  --nav-item-background-active: #082325;
+  --nav-item-background-hover: #091b1d;
+  --nav-item-weight-active: 600;
+  --nav-file-tag: var(--grid-orange);
+  --nav-collapse-icon-color: var(--grid-faint);
+  --nav-collapse-icon-color-collapsed: var(--grid-muted);
+  --icon-color: var(--grid-muted);
+  --icon-color-hover: var(--grid-text);
+  --icon-color-active: var(--grid-cyan);
+  --icon-color-focused: var(--grid-cyan);
+  --icon-opacity: 1;
+  --status-bar-background: var(--grid-black);
+  --status-bar-border-color: var(--grid-border);
+  --status-bar-text-color: var(--grid-muted);
+  --status-bar-radius: 0;
+  --vault-name-color: var(--grid-text);
+  --workspace-background-translucent: #000000ed;
+
+  --h1-color: #d8e1dd;
+  --h2-color: var(--grid-cyan);
+  --h3-color: var(--grid-cyan);
+  --h4-color: #9ae8e8;
+  --h5-color: #9ae8e8;
+  --h6-color: #9ae8e8;
+  --h1-weight: 650;
+  --h2-weight: 600;
+  --h2-font: var(--font-interface-theme);
+  --h3-font: var(--font-interface-theme);
+  --h3-weight: 600;
+  --inline-title-color: #d8e1dd;
+  --inline-title-weight: 650;
+  --bold-color: var(--grid-orange);
+  --italic-color: #b8d1ce;
+  --link-color: var(--grid-cyan);
+  --link-color-hover: #b4f7ff;
+  --link-external-color: var(--grid-blue);
+  --link-external-color-hover: #badfff;
+  --link-unresolved-color: var(--grid-blue);
+  --link-unresolved-opacity: 1;
+  --link-unresolved-decoration-style: dashed;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --tag-color: var(--grid-orange);
+  --tag-color-hover: #ffb76b;
+  --tag-background: #ff8c1a14;
+  --tag-background-hover: #ff8c1a26;
+  --tag-border-color: #b36b24;
+  --tag-border-color-hover: var(--grid-orange);
+  --tag-border-width: 1px;
+  --tag-radius: 1px;
+  --hr-color: #315b5b;
+  --blockquote-border-color: var(--grid-cyan);
+  --blockquote-border-thickness: 2px;
+  --blockquote-background-color: #08171a;
+  --blockquote-color: #b8d1ce;
+  --list-marker-color: var(--grid-blue);
+  --list-marker-color-hover: var(--grid-cyan);
+  --checkbox-color: var(--grid-cyan);
+  --checkbox-color-hover: #91f1ff;
+  --checkbox-border-color: var(--grid-faint);
+  --checkbox-marker-color: var(--grid-black);
+  --checklist-done-color: var(--grid-muted);
+  --indentation-guide-color: #244244;
+  --indentation-guide-color-active: #4d8b9f;
+
+  --code-background: #061014;
+  --code-normal: var(--grid-text);
+  --code-comment: var(--grid-muted);
+  --code-function: var(--grid-cyan);
+  --code-keyword: var(--grid-blue);
+  --code-operator: #b8d1ce;
+  --code-property: #a4e8f5;
+  --code-punctuation: var(--grid-muted);
+  --code-string: var(--grid-orange);
+  --code-tag: var(--grid-blue);
+  --code-value: var(--grid-amber);
+  --table-border-color: var(--grid-border);
+  --table-header-background: var(--grid-panel);
+  --table-header-color: #b8eefd;
+  --table-row-alt-background: #07111380;
+  --table-row-background-hover: #00eeee0d;
+  --table-selection: #00eeee20;
+  --table-selection-border-color: var(--grid-cyan);
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.4;
+  --callout-radius: 1px;
+  --callout-blend-mode: normal;
+  --callout-title-weight: 600;
+  --metadata-label-text-color: var(--grid-muted);
+  --metadata-input-text-color: var(--grid-text);
+  --metadata-border-color: var(--grid-border);
+  --metadata-label-background-hover: var(--grid-raised);
+  --graph-text: var(--grid-text);
+  --graph-line: #315568;
+  --graph-node: var(--grid-cyan);
+  --graph-node-unresolved: var(--grid-faint);
+  --graph-node-focused: var(--grid-orange);
+  --graph-node-tag: var(--grid-orange);
+  --graph-node-attachment: var(--grid-blue);
+  --canvas-background: var(--grid-bg);
+  --canvas-dot-pattern: #244244;
+  --scrollbar-bg: #00eeee05;
+  --scrollbar-thumb-bg: #4c797966;
+  --scrollbar-active-thumb-bg: #00eeee66;
+}
+
+/* Small edge lights; no overlays across the writing surface. */
+.theme-dark .workspace-tab-header.is-active {
+  box-shadow: inset 0 2px 0 var(--grid-cyan), var(--grid-glow);
+}
+.theme-dark .nav-file-title.is-active {
+  box-shadow: inset 2px 0 var(--grid-orange);
+}
+.theme-dark .workspace-leaf.mod-active .view-header {
+  border-bottom: 3px double #315b5b;
+}
+.theme-dark .side-dock-ribbon-action.is-active,
+.theme-dark .clickable-icon.is-active {
+  color: var(--grid-cyan);
+  background-color: #00eeee12;
+}
+.theme-dark .markdown-rendered h2 {
+  padding-bottom: 0.28em;
+  border-bottom: 1px solid #244044;
+}
+.theme-dark .cm-header-2 {
+  color: var(--h2-color);
+}
+.theme-dark .markdown-rendered pre,
+.theme-dark .cm-s-obsidian .HyperMD-codeblock {
+  background-color: var(--code-background);
+}
+.theme-dark .markdown-rendered pre {
+  border: 1px solid var(--grid-border);
+  border-inline-start: 2px solid #408ac4;
+  border-radius: 1px;
+}
+.theme-dark .markdown-rendered :not(pre) > code,
+.theme-dark .cm-inline-code {
+  color: var(--grid-amber);
+  background-color: #ff8c1a14;
+  box-shadow: inset 0 -1px #ff8c1a66;
+}
+.theme-dark .markdown-rendered mark,
+.theme-dark .cm-s-obsidian .cm-highlight {
+  color: var(--grid-gold);
+}
+.theme-dark .callout {
+  --callout-color: 0, 238, 238;
+}
+.theme-dark .callout[data-callout="warning"],
+.theme-dark .callout[data-callout="caution"],
+.theme-dark .callout[data-callout="attention"] {
+  --callout-color: 255, 140, 26;
+}
+.theme-dark .callout[data-callout="tip"],
+.theme-dark .callout[data-callout="success"],
+.theme-dark .callout[data-callout="check"],
+.theme-dark .callout[data-callout="done"] {
+  --callout-color: 129, 221, 190;
+}
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"],
+.theme-dark .callout[data-callout="failure"],
+.theme-dark .callout[data-callout="fail"],
+.theme-dark .callout[data-callout="missing"],
+.theme-dark .callout[data-callout="bug"] {
+  --callout-color: 255, 133, 149;
+}
+.theme-dark .callout[data-callout="question"],
+.theme-dark .callout[data-callout="help"],
+.theme-dark .callout[data-callout="faq"] {
+  --callout-color: 255, 140, 26;
+}
+.theme-dark .callout[data-callout="important"] {
+  --callout-color: 255, 230, 0;
+}
+.theme-dark .callout[data-callout="example"] {
+  --callout-color: 105, 183, 255;
+}
+.theme-dark .callout[data-callout="quote"],
+.theme-dark .callout[data-callout="cite"] {
+  --callout-color: 145, 170, 185;
+}
+.theme-dark button.mod-cta {
+  box-shadow: var(--grid-glow);
+}
+.theme-dark :is(button, a, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--grid-cyan);
+  outline-offset: 2px;
+}
+.theme-dark .suggestion-item.is-selected {
+  background-color: #163342;
+  color: var(--grid-text);
+}
+.theme-dark .search-result-file-matched-text {
+  color: var(--grid-yellow);
+  background-color: #ffe60030;
+}
+body.theme-dark.tron-grid-quiet { --grid-glow: none; }
+body.theme-dark.tron-grid-mono-notes {
+  --font-text-theme: "Inconsolata", "Cascadia Mono", Consolas, monospace;
+}
+body.theme-dark.tron-grid-rounded {
+  --radius-s: 3px;
+  --radius-m: 5px;
+  --radius-l: 7px;
+  --input-radius: 4px;
+  --tab-radius: 4px;
+  --callout-radius: 4px;
+}
+/* ENCOM light-table framing. Borders stay inside existing native surfaces. */
+.theme-dark .workspace-leaf-content > .view-header {
+  font-family: var(--font-interface-theme);
+  border-top: 1px solid #1d2c33;
+}
+.theme-dark .modal,
+.theme-dark .prompt {
+  border-color: var(--grid-frame);
+  box-shadow: 0 0 0 3px var(--grid-black), 0 0 0 4px #315b5b, var(--grid-glow);
+}
+.theme-dark .nav-folder-title-content {
+  color: var(--grid-frame);
+  letter-spacing: 0.04em;
+}
+.theme-dark .markdown-rendered h2 {
+  font-family: var(--h2-font);
+  letter-spacing: 0.025em;
+}
+.theme-dark .callout {
+  border-inline-start-width: 2px;
+}
+.theme-dark .callout-title {
+  font-family: var(--font-interface-theme);
+}
+.theme-dark .status-bar {
+  font-family: var(--font-interface-theme);
+  border-top: 3px double #315b5b;
+}
+.theme-dark .cm-s-obsidian .cm-header-2 {
+  font-family: var(--h2-font);
+}
+@media (prefers-contrast: more) {
+  body.theme-dark {
+    --grid-border: #567c91;
+    --grid-muted: #b1c8d6;
+    --grid-faint: #9ab5c6;
+    --grid-glow: none;
+  }
+}

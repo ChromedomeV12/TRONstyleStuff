@@ -1,0 +1,14 @@
+[
+  {
+    "disabled": false,
+    "echoExecuted": true,
+    "highlighting": true,
+    "runtimeChecksPassed": true
+  },
+  {
+    "disabled": true,
+    "echoExecuted": true,
+    "highlighting": false,
+    "runtimeChecksPassed": true
+  }
+]

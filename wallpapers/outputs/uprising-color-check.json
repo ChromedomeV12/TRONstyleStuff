@@ -1,0 +1,48 @@
+{
+  "output": "C:\\Users\\chrom\\Documents\\Codex\\2026-09-29\\how\\outputs\\shanghai-tron-uprising-color-grade.png",
+  "dimensions": [
+    4704,
+    3136
+  ],
+  "method": "Deterministic pointwise color and tone mapping from original photo; no generative editing, geometric transforms, blur, compositing, or added objects.",
+  "source_profile": "sRGB IEC61966-2.1",
+  "output_profile": "sRGB IEC61966-2.1",
+  "reference_frames_checked": 1,
+  "reference_duration_ms": 100,
+  "reference_assumption": "Reference JPEG interpreted as sRGB. Source mastering gamma cannot be inferred from a screenshot; the output uses the standard sRGB transfer function.",
+  "tone_check": "Reference screenshot brightness distribution, measured as Rec.709-weighted encoded RGB luma, matched with a monotonic tone curve. Not a claim of original film colorimetry.",
+  "reference_luma_percentiles_0_255": {
+    "10": 16.13,
+    "25": 25.46,
+    "50": 38.55,
+    "75": 65.74,
+    "90": 140.77,
+    "95": 203.38,
+    "99": 247.35,
+    "99.9": 252.6
+  },
+  "output_luma_percentiles_0_255": {
+    "10": 16.32,
+    "25": 25.51,
+    "50": 38.56,
+    "75": 65.9,
+    "90": 140.67,
+    "95": 203.2,
+    "99": 247.31,
+    "99.9": 252.27
+  },
+  "reference_mean_rgb_0_255": [
+    26.76,
+    65.52,
+    85.37
+  ],
+  "output_mean_rgb_0_255": [
+    26.43,
+    65.43,
+    86.59
+  ],
+  "reference_mean_luma_0_255": 58.71,
+  "output_mean_luma_0_255": 58.66,
+  "warm_pixels": 0,
+  "verification": "Full-resolution PNG reopened; dimensions, embedded sRGB profile, and all RGB pixel values verified."
+}

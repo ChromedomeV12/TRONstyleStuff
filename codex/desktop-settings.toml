@@ -1,0 +1,18 @@
+[desktop]
+appearanceDarkCodeThemeId = "codex"
+
+[desktop.appearanceDarkChromeTheme]
+accent = "#00EEEE"
+accentSource = "custom"
+contrast = 75
+ink = "#D8E1DD"
+opaqueWindows = true
+surface = "#000000"
+
+[desktop.appearanceDarkChromeTheme.fonts]
+code = "Hack Nerd Font Mono"
+
+[desktop.appearanceDarkChromeTheme.semanticColors]
+diffAdded = "#6FC0BA"
+diffRemoved = "#FF8595"
+skill = "#FF8C1A"

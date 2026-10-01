@@ -1,0 +1,1 @@
+codex-theme-v1:{"codeThemeId":"codex","theme":{"accent":"#00dfff","accentSource":"custom","contrast":85,"ink":"#d8e1dd","opaqueWindows":true,"surface":"#041725","fonts":{"code":"Hack Nerd Font Mono","ui":null},"semanticColors":{"diffAdded":"#56e4ef","diffRemoved":"#ff8595","skill":"#ff8c1a"}},"variant":"dark"}

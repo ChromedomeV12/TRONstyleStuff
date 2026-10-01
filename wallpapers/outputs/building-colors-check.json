@@ -1,0 +1,36 @@
+{
+  "size": [
+    4704,
+    3136
+  ],
+  "profile": "sRGB",
+  "operation": "Facade masks and matching reflection footprints; color-only edits; no generation, geometry changes, water synthesis or image resampling.",
+  "building_hues_degrees": {
+    "west riverfront": 207,
+    "west blue tower": 218,
+    "west turquoise tower": 178,
+    "west dark tower": 208,
+    "cyan square tower": 184,
+    "slender blue tower": 215,
+    "left central tower": 194,
+    "blue stepped tower": 218,
+    "domed cyan tower": 182,
+    "rear blue tower": 211,
+    "Pearl Tower turquoise": 174,
+    "waterfront glass domes": 181,
+    "central cyan skyscraper": 188,
+    "Shanghai tower blue": 205,
+    "striped blue tower": 218,
+    "gold roof recolored blue": 211,
+    "right turquoise tower": 175,
+    "right blue facade": 213,
+    "right cyan tower": 185,
+    "right deep blue tower": 218,
+    "Aurora turquoise": 176,
+    "east blue facade": 210
+  },
+  "reflection_method": "Same building hue assignments projected beneath each building, softly blended where neighboring reflected light overlaps. Original ripples and brightness texture retained.",
+  "highlight_check": "Original softened maximum RGB intensity preserved or reduced; blue facades have naturally lower luminance than equally intense cyan facades.",
+  "max_channel_increase_0_255": 0,
+  "saved_pixel_verification": true
+}

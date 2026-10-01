@@ -1,0 +1,200 @@
+/* TRON / ENCOM — Zen 1.22.3b. Browser UI only; no layout or animation overrides. */
+:root#main-window {
+  color-scheme: dark !important;
+  --tron-bg: #050e14;
+  --tron-panel: #08141c;
+  --tron-raised: #102936;
+  --tron-text: #c4d4d8;
+  --tron-muted: #829faa;
+  --tron-blue: #6fc3df;
+  --tron-cyan: #78ddff;
+  --tron-edge: #2eaac9;
+  --tron-dim-edge: #174653;
+  --tron-orange: #ff8c1a;
+  --zen-primary-color: var(--tron-blue) !important;
+  --zen-colors-primary: var(--tron-panel) !important;
+  --zen-colors-secondary: var(--tron-raised) !important;
+  --zen-colors-tertiary: var(--tron-bg) !important;
+  --zen-colors-hover-bg: var(--tron-raised) !important;
+  --zen-colors-primary-foreground: var(--tron-cyan) !important;
+  --zen-colors-border: var(--tron-dim-edge) !important;
+  --zen-colors-border-contrast: var(--tron-edge) !important;
+  --zen-colors-input-bg: var(--tron-panel) !important;
+  --zen-input-border-color: var(--tron-dim-edge) !important;
+  --zen-dialog-background: var(--tron-panel) !important;
+  --zen-urlbar-background: var(--tron-panel) !important;
+  --zen-urlbar-background-base: var(--tron-panel) !important;
+  --zen-main-browser-background: var(--tron-bg) !important;
+  --zen-main-browser-background-toolbar: var(--tron-panel) !important;
+  --zen-themed-toolbar-bg: var(--tron-panel) !important;
+  --zen-themed-toolbar-bg-transparent: var(--tron-panel) !important;
+  --zen-sidebar-themed-icon-fill: var(--tron-blue) !important;
+  --zen-appcontent-border: 1px solid var(--tron-edge) !important;
+  --toolbar-bgcolor: var(--tron-panel) !important;
+  --toolbar-color: var(--tron-text) !important;
+  --toolbarbutton-icon-fill: var(--tron-blue) !important;
+  --toolbarbutton-hover-background: var(--tron-raised) !important;
+  --toolbarbutton-active-background: #14394a !important;
+  --toolbar-field-background-color: var(--tron-bg) !important;
+  --toolbar-field-color: var(--tron-text) !important;
+  --toolbar-field-focus-background-color: var(--tron-panel) !important;
+  --toolbar-field-focus-color: var(--tron-text) !important;
+  --toolbar-field-focus-border-color: var(--tron-cyan) !important;
+  --urlbar-box-bgcolor: var(--tron-raised) !important;
+  --urlbar-box-hover-bgcolor: #14394a !important;
+  --urlbar-box-active-bgcolor: #14394a !important;
+  --lwt-text-color: var(--tron-text) !important;
+  --lwt-sidebar-text-color: var(--tron-text) !important;
+  --lwt-sidebar-background-color: var(--tron-bg) !important;
+  --sidebar-background-color: var(--tron-bg) !important;
+  --sidebar-text-color: var(--tron-text) !important;
+  --arrowpanel-background: var(--tron-panel) !important;
+  --arrowpanel-color: var(--tron-text) !important;
+  --arrowpanel-border-color: var(--tron-edge) !important;
+  --panel-background: var(--tron-panel) !important;
+  --panel-color: var(--tron-text) !important;
+  --panel-border-color: var(--tron-edge) !important;
+  --tab-selected-bgcolor: var(--tron-raised) !important;
+  --tab-selected-textcolor: var(--tron-cyan) !important;
+  --tab-background-color-selected: var(--tron-raised) !important;
+  --tab-background-color-hover: #0d2230 !important;
+  --attention-dot-color: var(--tron-orange) !important;
+  --focus-outline-color: var(--tron-cyan) !important;
+  --input-bgcolor: var(--tron-panel) !important;
+  --input-color: var(--tron-text) !important;
+  --input-border-color: var(--tron-dim-edge) !important;
+}
+
+/* A rounded, double circuit outline without changing the resize hit areas. */
+:root#main-window:not([inFullscreen]):not([inDOMFullscreen])::after {
+  content: "";
+  position: fixed;
+  inset: 1px;
+  border: 1px solid var(--tron-edge);
+  border-radius: 11px;
+  box-shadow: inset 0 0 0 3px var(--tron-bg), inset 0 0 0 4px var(--tron-dim-edge);
+  pointer-events: none;
+  z-index: 2147483640;
+}
+
+#zen-main-app-wrapper, #navigator-toolbox, #TabsToolbar,
+#zen-appcontent-navbar-container, #nav-bar, #PersonalToolbar,
+#zen-sidebar-top-buttons, #zen-sidebar-foot-buttons {
+  background: var(--tron-panel) !important;
+  color: var(--tron-text) !important;
+}
+#zen-sidebar-splitter {
+  background: linear-gradient(to right, transparent, var(--tron-edge), transparent) !important;
+}
+#navigator-toolbox {
+  box-shadow: inset -1px 0 var(--tron-edge), inset -4px 0 var(--tron-dim-edge) !important;
+}
+:root[zen-right-side="true"] #navigator-toolbox {
+  box-shadow: inset 1px 0 var(--tron-edge), inset 4px 0 var(--tron-dim-edge) !important;
+}
+#nav-bar {
+  box-shadow: inset 0 -1px var(--tron-edge) !important;
+}
+#tabbrowser-tabpanels .browserSidebarContainer {
+  outline: 1px solid var(--tron-edge) !important;
+  outline-offset: -1px;
+}
+:root[inDOMFullscreen] #tabbrowser-tabpanels .browserSidebarContainer {
+  outline: none !important;
+}
+#zen-appcontent-navbar-container {
+  box-shadow: inset 0 -1px var(--tron-edge), inset 0 -4px var(--tron-dim-edge) !important;
+}
+#zen-tabbox-wrapper {
+  outline: 1px solid var(--tron-edge) !important;
+  outline-offset: -1px;
+  border-radius: var(--zen-border-radius, 8px) !important;
+}
+:root[inDOMFullscreen] #zen-tabbox-wrapper { outline: none !important; }
+
+/* Keep active tabs blue; orange is reserved for small state indicators. */
+.tabbrowser-tab .tab-background {
+  border-radius: 8px !important;
+}
+.tabbrowser-tab:hover .tab-background {
+  background: #0d2230 !important;
+  box-shadow: inset 0 0 0 1px var(--tron-dim-edge) !important;
+}
+.tabbrowser-tab:is([visuallyselected], [selected="true"]) .tab-background {
+  background: var(--tron-raised) !important;
+  box-shadow: inset 3px 0 var(--tron-cyan), inset 0 0 0 1px var(--tron-edge) !important;
+}
+.tabbrowser-tab:is([visuallyselected], [selected="true"]) .tab-label {
+  color: var(--tron-cyan) !important;
+}
+.tabbrowser-tab[zen-essential] .tab-background::before {
+  background: var(--tron-raised) !important;
+}
+.tabbrowser-tab:is([soundplaying], [muted]) .tab-icon-overlay {
+  fill: var(--tron-orange) !important;
+  color: var(--tron-orange) !important;
+}
+.tabbrowser-tab .tab-close-button:hover,
+.titlebar-close:hover {
+  background: #542c18 !important;
+  fill: var(--tron-orange) !important;
+}
+.zen-current-workspace-indicator-name {
+  color: var(--tron-text) !important;
+}
+.zen-current-workspace-indicator-icon,
+#tabs-newtab-button, #new-tab-button {
+  color: var(--tron-cyan) !important;
+  fill: var(--tron-cyan) !important;
+}
+#zen-workspaces-button { background: var(--tron-panel) !important; }
+toolbarbutton:is([checked="true"], [open="true"]):not(.tabbrowser-tab) {
+  --toolbarbutton-icon-fill: var(--tron-orange) !important;
+}
+#star-button[starred] { fill: var(--tron-orange) !important; }
+
+#urlbar-background, .urlbar-background {
+  background: var(--tron-panel) !important;
+  border: 1px solid var(--tron-dim-edge) !important;
+  border-radius: 9px !important;
+}
+#urlbar:is([focused], [breakout-extend]) :is(#urlbar-background, .urlbar-background) {
+  border-color: var(--tron-cyan) !important;
+  box-shadow: 0 0 0 2px #17465366 !important;
+}
+#urlbar-input { color: var(--tron-text) !important; }
+.urlbarView-url { color: var(--tron-blue) !important; }
+.urlbarView-row { color: var(--tron-text) !important; }
+.urlbarView-row:is([selected], :hover) .urlbarView-row-inner {
+  background: var(--tron-raised) !important;
+  border-radius: 7px !important;
+}
+.urlbarView-row strong { color: var(--tron-orange) !important; }
+
+menupopup, panel {
+  --panel-background: var(--tron-panel) !important;
+  --panel-color: var(--tron-text) !important;
+  --panel-border-color: var(--tron-edge) !important;
+}
+menupopup > :is(menu, menuitem)[_moz-menuactive="true"],
+.subviewbutton:hover {
+  background-color: var(--tron-raised) !important;
+  color: var(--tron-cyan) !important;
+}
+menuseparator, toolbarseparator { border-color: var(--tron-dim-edge) !important; }
+#zen-media-controls-toolbar {
+  background: var(--tron-panel) !important;
+  box-shadow: inset 0 0 0 1px var(--tron-dim-edge) !important;
+}
+#zen-media-progress-bar::-moz-range-progress { background: var(--tron-cyan) !important; }
+#zen-media-progress-bar::-moz-range-thumb { background: var(--tron-orange) !important; }
+
+/* Container identities remain distinct, including green/purple/red meanings. */
+.identity-color-blue { --identity-tab-color: #6fc3df !important; --identity-icon-color: #6fc3df !important; }
+.identity-color-turquoise { --identity-tab-color: #78ddff !important; --identity-icon-color: #78ddff !important; }
+.identity-color-green { --identity-tab-color: #50d6c6 !important; --identity-icon-color: #50d6c6 !important; }
+.identity-color-orange { --identity-tab-color: #ff8c1a !important; --identity-icon-color: #ff8c1a !important; }
+.identity-color-yellow { --identity-tab-color: #ffe600 !important; --identity-icon-color: #ffe600 !important; }
+.identity-color-red { --identity-tab-color: #ff6b4a !important; --identity-icon-color: #ff6b4a !important; }
+.identity-color-purple { --identity-tab-color: #c594c5 !important; --identity-icon-color: #c594c5 !important; }
+.identity-color-pink { --identity-tab-color: #e6a3bd !important; --identity-icon-color: #e6a3bd !important; }

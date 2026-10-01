@@ -1,0 +1,48 @@
+{
+  "output": "C:\\Users\\chrom\\Documents\\Codex\\2026-09-29\\how\\outputs\\shanghai-tron-color-grade.png",
+  "dimensions": [
+    4704,
+    3136
+  ],
+  "method": "Deterministic pointwise color and tone mapping from original photo; no generative editing, geometric transforms, blur, compositing, or added objects.",
+  "source_profile": "sRGB IEC61966-2.1",
+  "output_profile": "sRGB IEC61966-2.1",
+  "reference_frames_checked": 22,
+  "reference_duration_ms": 2200,
+  "reference_assumption": "Untagged GIF interpreted as sRGB. Actual film mastering gamma cannot be inferred from the GIF.",
+  "tone_check": "Duration-weighted reference brightness distribution, measured as Rec.709-weighted encoded RGB luma, matched with a monotonic tone curve. Not a claim of original film colorimetry.",
+  "reference_luma_percentiles_0_255": {
+    "10": 1.34,
+    "25": 3.34,
+    "50": 9.9,
+    "75": 18.34,
+    "90": 33.15,
+    "95": 51.38,
+    "99": 146.34,
+    "99.9": 216.57
+  },
+  "output_luma_percentiles_0_255": {
+    "10": 1.02,
+    "25": 3.17,
+    "50": 10.21,
+    "75": 18.09,
+    "90": 33.41,
+    "95": 51.2,
+    "99": 146.15,
+    "99.9": 216.5
+  },
+  "reference_mean_rgb_0_255": [
+    4.16,
+    19.28,
+    22.36
+  ],
+  "output_mean_rgb_0_255": [
+    5.95,
+    18.6,
+    22.48
+  ],
+  "reference_mean_luma_0_255": 16.29,
+  "output_mean_luma_0_255": 16.19,
+  "warm_pixels": 0,
+  "verification": "Full-resolution PNG reopened; dimensions, embedded sRGB profile, and all RGB pixel values verified."
+}

@@ -1,0 +1,63 @@
+/* TRON: built-in pages only. Websites retain their own styles. */
+@-moz-document url-prefix("about:") {
+  :root {
+    color-scheme: dark !important;
+    --in-content-page-background: #050e14 !important;
+    --in-content-page-color: #c4d4d8 !important;
+    --in-content-text-color: #c4d4d8 !important;
+    --in-content-box-background: #08141c !important;
+    --background-color-canvas: #050e14 !important;
+    --background-color-box: #08141c !important;
+    --text-color: #c4d4d8 !important;
+    --link-color: #6fc3df !important;
+    --link-color-hover: #78ddff !important;
+    --color-accent-primary: #6fc3df !important;
+    --color-accent-primary-hover: #78ddff !important;
+    --color-accent-primary-active: #ff8c1a !important;
+    --in-content-primary-button-background: #6fc3df !important;
+    --in-content-primary-button-text-color: #050e14 !important;
+    --in-content-primary-button-background-hover: #78ddff !important;
+    --in-content-primary-button-text-color-hover: #050e14 !important;
+    --zen-primary-color: #6fc3df !important;
+    --zen-colors-primary: #08141c !important;
+    --zen-colors-secondary: #102936 !important;
+    --zen-colors-tertiary: #050e14 !important;
+    --zen-colors-border: #174653 !important;
+    --zen-colors-primary-foreground: #78ddff !important;
+    --zen-dark-color-mix-base: #050e14 !important;
+    --focus-outline-color: #78ddff !important;
+    background-color: #050e14 !important;
+    color: #c4d4d8 !important;
+  }
+  ::selection { background: #183c66 !important; color: #d8e1dd !important; }
+}
+@-moz-document url("about:newtab"), url("about:home") {
+  :root {
+    --newtab-background-color: #050e14 !important;
+    --newtab-background-color-secondary: #08141c !important;
+    --newtab-element-hover-color: #102936 !important;
+    --newtab-text-primary-color: #c4d4d8 !important;
+    --newtab-text-secondary-color: #829faa !important;
+    --newtab-wordmark-color: #c4d4d8 !important;
+    --newtab-primary-action-background: #6fc3df !important;
+  }
+  body { background: #050e14 !important; }
+  .search-handoff-button, .search-wrapper input {
+    background: #08141c !important;
+    color: #c4d4d8 !important;
+    border: 1px solid #2eaac9 !important;
+    box-shadow: 0 0 0 3px #17465355 !important;
+  }
+  .top-site-outer:hover .tile, .card-outer:hover {
+    outline: 1px solid #2eaac9 !important;
+  }
+}
+@-moz-document url-prefix("about:preferences"), url-prefix("about:addons") {
+  .main-content, .sticky-container { background: #050e14 !important; }
+  groupbox, moz-card, .card {
+    background: #08141c !important;
+    border-color: #174653 !important;
+  }
+  h1 { color: #c4d4d8 !important; }
+  h2, .category[selected] { color: #78ddff !important; }
+}

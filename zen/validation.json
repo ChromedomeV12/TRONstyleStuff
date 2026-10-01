@@ -1,0 +1,53 @@
+{
+  "chrome": {
+    "uri": "chrome://browser/content/browser.xhtml",
+    "background": "#050e14",
+    "accent": "#6fc3df",
+    "frame": "rgb(46, 170, 201)",
+    "frameEvents": "none",
+    "selectedTab": "rgb(120, 221, 255) 3px 0px 0px 0px inset, rgb(46, 170, 201) 0px 0px 0px 1px inset",
+    "sheets": [],
+    "nodes": [
+      {
+        "id": "zen-main-app-wrapper",
+        "found": true
+      },
+      {
+        "id": "zen-tabbox-wrapper",
+        "found": true
+      },
+      {
+        "id": "zen-appcontent-navbar-container",
+        "found": true
+      },
+      {
+        "id": "zen-sidebar-splitter",
+        "found": true
+      },
+      {
+        "id": "urlbar-background",
+        "found": false
+      }
+    ]
+  },
+  "urlbar": {
+    "focus": "urlbar-input",
+    "border": "rgb(120, 221, 255)"
+  },
+  "internalPages": {
+    "background": "rgb(5, 14, 20)",
+    "text": "rgb(196, 212, 216)"
+  },
+  "menu": {
+    "state": "open",
+    "background": "#08141c"
+  },
+  "websitesUnaffected": {
+    "background": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)"
+  },
+  "compact": {
+    "active": "true",
+    "frameEvents": "none"
+  }
+}

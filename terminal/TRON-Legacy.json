@@ -1,0 +1,23 @@
+{
+  "background": "#050E14",
+  "black": "#000000",
+  "blue": "#6FC3DF",
+  "brightBlack": "#1B2B34",
+  "brightBlue": "#6FC3DF",
+  "brightCyan": "#78DDFF",
+  "brightGreen": "#80E5D4",
+  "brightPurple": "#C594C5",
+  "brightRed": "#FF9566",
+  "brightWhite": "#FFFFFF",
+  "brightYellow": "#FFE600",
+  "cursorColor": "#78DDFF",
+  "cyan": "#6FC3DF",
+  "foreground": "#6FC3DF",
+  "green": "#50D6C6",
+  "name": "TRON Legacy",
+  "purple": "#C594C5",
+  "red": "#FF6B4A",
+  "selectionBackground": "#183C66",
+  "white": "#FFFFFF",
+  "yellow": "#FF8C1A"
+}

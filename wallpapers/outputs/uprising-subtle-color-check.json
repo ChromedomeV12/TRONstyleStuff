@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    4704,
+    3136
+  ],
+  "profile": "sRGB IEC61966-2.1",
+  "selective_color_strength_percent": 28,
+  "method": "Previous building and reflection color adjustments reduced together over the reference-based, softened-light grade.",
+  "preserved": "Photo geometry, original water ripples, full source dimensions, softened highlights.",
+  "verification": "PNG reopened; dimensions, profile, saved RGB values and no highlight increase verified."
+}

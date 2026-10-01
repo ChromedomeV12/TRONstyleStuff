@@ -1,0 +1,25 @@
+{
+  "name": "Tron Grid",
+  "version": "0.3.4",
+  "description": "Portable design tokens, not a Codex or terminal import schema",
+  "colors": {
+    "black": "#000000",
+    "background": "#030708",
+    "panel": "#071113",
+    "raised": "#102024",
+    "border": "#244044",
+    "foreground": "#d8e1dd",
+    "muted": "#a0b8b6",
+    "faint": "#829c9b",
+    "accent": "#00eeee",
+    "blue": "#69B7FF",
+    "orange": "#FF8C1A",
+    "yellow": "#FFE600",
+    "error": "#FF8595",
+    "success": "#81DDBE",
+    "frame": "#6FC0BA",
+    "gold": "#FFE600",
+    "amber": "#FF8C1A",
+    "title": "#D8E1DD"
+  }
+}
