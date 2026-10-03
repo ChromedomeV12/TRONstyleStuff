@@ -1,0 +1,55 @@
+{
+  "published": {
+    "status": "last-successfully-published-snapshot",
+    "date": "2026-10-02",
+    "atlas": "assets/published/spritesheet.png",
+    "sha256": "f429c9ea76cc8e6cd84e1dcdff65cbaa67731def9232e6dcf626e384f6793870",
+    "idle_angles_degrees": [
+      0,
+      0.8,
+      1,
+      0,
+      -1,
+      -0.8
+    ]
+  },
+  "approved_idle_draft": {
+    "status": "approved-not-deployed",
+    "date": "2026-10-03",
+    "source_only": true,
+    "idle_angles_degrees": [
+      0,
+      2.4,
+      3,
+      0,
+      -3,
+      -2.4
+    ],
+    "duration_ms": [
+      280,
+      110,
+      110,
+      140,
+      140,
+      320
+    ],
+    "deployment_blocker": "Current stored-sheet download returned HTTP403, including one authorized fresh-link retry after deselection. No alternate route or persisted update was attempted."
+  },
+  "geometry": {
+    "mesh": "assets/mesh.npz",
+    "sha256": "025ad41522c78555813102b1657d73e712b628b7454e5b5963439961f7a12c57",
+    "vertices": 32,
+    "faces": 60,
+    "edges": 90,
+    "edge_length": 2,
+    "cue_face_index": 46,
+    "global_camera_roll_degrees": -3,
+    "look_tilt_degrees": 20
+  },
+  "limitations": [
+    "Current server bytes were not retrieved on 2026-10-03. Published assets are the exact retained upload snapshot, not a new server fetch.",
+    "Mini widths24,32,48,64 are test sizes, not measured app dimensions.",
+    "No native FPS control is supplied or promised.",
+    "Private pet and Library IDs, signed links and installation metadata are omitted."
+  ]
+}

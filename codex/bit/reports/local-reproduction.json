@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "published_atlas_sha256": "f429c9ea76cc8e6cd84e1dcdff65cbaa67731def9232e6dcf626e384f6793870",
+  "mesh_max_edge_error": 4.440892098500626e-16,
+  "idle_source_pixel_parity": {
+    "published": true,
+    "approved-draft": true
+  },
+  "bundled_structural_validation": true,
+  "bundled_quality_validation": true,
+  "quality_warning_count": 10,
+  "scope": "Local retained assets only; no current-server verification or deployment.",
+  "complete_published_rebuild_exact_bytes": true,
+  "complete_rebuild_sha256": "f429c9ea76cc8e6cd84e1dcdff65cbaa67731def9232e6dcf626e384f6793870",
+  "comparison_script_source_parity": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ]
+}

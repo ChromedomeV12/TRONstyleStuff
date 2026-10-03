@@ -1,0 +1,170 @@
+{
+  "reviewer": "bit_wave independent worker",
+  "scope": "Nine standard states, source frames, native-size atlas contact sheet, encoded GIF timing and sampled final transition boundaries. No artwork changed.",
+  "verdict": "pass_with_reviewed_warnings",
+  "is_final_pet_validation": false,
+  "evidence": [
+    "standard-motion-native-contact.png",
+    "standard-motion-measurements.json",
+    "encoded-boundary-measurements.json",
+    "gif-visibility-audit.json",
+    "encoded-boundary-stills/",
+    "opaque-preview-audit.json",
+    "final-gif-pixel-comparison.json"
+  ],
+  "geometry": {
+    "verdict": "pass",
+    "mesh_sha256": "025ad41522c78555813102b1657d73e712b628b7454e5b5963439961f7a12c57",
+    "vertices": 32,
+    "faces": 60,
+    "edges": 90,
+    "reported_transforms_independently_checked": 58,
+    "maximum_rotation_orthogonality_error": 4.440892098500626e-16,
+    "maximum_transformed_edge_length_error": 8.881784197001252e-16,
+    "observed": "Same solid and cyan aiming facet throughout. No visible mesh stretching, new appendages, detached pieces, holes, or clipping. Numerical checks use saved transforms and original mesh, rather than attempting to reconstruct 3D geometry from PNGs."
+  },
+  "states": {
+    "idle": {
+      "frames": 6,
+      "gif_durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "observed": "Tiny rigid sway, approximately 2px silhouette vertical range and slight illumination variation. Calm and visibly nonidentical frames."
+    },
+    "running-right": {
+      "frames": 8,
+      "gif_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "observed": "Cyan aiming facet is on screen-right; restrained alternating rigid bank and hover cadence. No foot-running or effects."
+    },
+    "running-left": {
+      "frames": 8,
+      "gif_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "observed": "Cyan aiming facet is on screen-left; restrained alternating bank and hover cadence. Same solid construction."
+    },
+    "waving": {
+      "frames": 4,
+      "gif_durations_ms": [
+        140,
+        140,
+        140,
+        280
+      ],
+      "observed": "Brief left/right rigid rocking greeting returning to exactly the first pose. This follows the user's rigid-mesh constraint; it is not an attached-limb wave. The middle transition is the largest standard rotational step: -4 to +4 degrees over 140ms, therefore visibly stepped rather than interpolated."
+    },
+    "jumping": {
+      "frames": 5,
+      "gif_durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ],
+      "observed": "Rigid rise and return, with alpha>16 bottoms 176,170,164,170,176. Body size stays 140x144px. Actual lift is 12px; identical first and last jump poses."
+    },
+    "failed": {
+      "frames": 8,
+      "gif_durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ],
+      "observed": "Small downward slump and dimming, then recovery. No symbols or effects. Meaning is abstract but distinct from idle through its lower brightness and pitched silhouette."
+    },
+    "waiting": {
+      "frames": 6,
+      "gif_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ],
+      "observed": "Gentle forward/upward pitch, restrained lift and brightening, then return. Expectancy is an interpretive cue, not unambiguous without a state label."
+    },
+    "running": {
+      "frames": 6,
+      "gif_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "observed": "More active rigid sway and light pulse than idle; stationary work/processing cue. No directional travel or literal running. Visually related to idle by design."
+    },
+    "review": {
+      "frames": 6,
+      "gif_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "observed": "Small left/down then right/down rigid scan; no props. Lower bound remains176 throughout. First and last frames identical. Inspection meaning is subtle at native size."
+    }
+  },
+  "loop_boundaries": {
+    "verdict": "pass_with_notes",
+    "observed": "Waving, jumping, failed and review have exactly identical endpoint PNG pixels. Other loop seams have pixel differences comparable to or below their ordinary adjacent changes. Native frame sequences show no conspicuous scale pop or clipping. Variable frame holds are present; this review makes no native runtime FPS claim."
+  },
+  "registration": {
+    "verdict": "minor_reviewed_warning",
+    "idle_jump": "Idle0 bounds [25,32,165,176]; jump0/jump4 bounds [26,32,166,176]. Same size and vertical baseline, but a1px horizontal offset exists. Sampled encoded transition endpoints look coherent at native bounds; this is not a conspicuous shape or scale pop.",
+    "failure_neutral": "Failed first/last bounds [26,30,166,174], approximately2px above idle and neighboring waiting neutral. Sampled final all-state boundaries reveal a slight positional shift, not a conspicuous broken transition; retained as a warning.",
+    "blocking": false
+  },
+  "encoded_preview_checks": {
+    "final_opaque_revision": "Verified all nine standard GIFs, the17-frame idle-jump-idle and57-frame all-state GIF have expected counts and full opacity. Navy compositing is a presentation consistency change; no prior encoding bug was established. Final landing frame10 was reopened and visually complete. Every final decoded pose was numerically compared to the corresponding exact atlas crop composited on navy; see final-gif-pixel-comparison.json for palette-quantization differences and atlas digest.",
+    "idle_jump_idle_frames": 17,
+    "all_state_frames": 57,
+    "dimensions": {
+      "idle_jump_idle": [
+        192,
+        208
+      ],
+      "all_states": [
+        192,
+        232
+      ]
+    },
+    "diagnostic_correction": "One multi-image tool display initially made decoded transition frame10 appear nearly blank. File alpha and RGB measurements showed a complete frame; reopening the same PNG displayed it correctly. No encoded blank-frame defect was reproduced. It must not be reported as a GIF encoding failure."
+  },
+  "limitations": [
+    "The image tool exposes still frames. All57 source poses were visually inspected via native-size contact sheet, GIF durations were read, and relevant final encoded boundaries were decoded and inspected. Continuous wall-clock playback in a video player was not performed.",
+    "Rigid eyeless geometry limits semantic separation between idle, waiting, active-work and review. Final actual motion should be shown to the user as planned.",
+    "This is an independent standard-motion review, not a replacement for mandatory bundled atlas quality, direction semantics, native Pets preflight or final user motion review."
+  ]
+}

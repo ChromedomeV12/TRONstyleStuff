@@ -2,6 +2,8 @@
 
 The accepted ENCOM palette, exported on 2026-09-30. Optional cyan outlines and rounded double window frames are provided separately in [divider-test](divider-test/README.md).
 
+The [Bit animated companion](bit/README.md) has its own exact geometric renderer, published sprite atlas and an approved, not-yet-deployed mini-avatar idle revision.
+
 | Role | Color |
 | --- | --- |
 | Background | `#000000` |

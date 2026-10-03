@@ -1,0 +1,107 @@
+{
+  "reviewer": "root labeled final direction-sheet.png inspection",
+  "cue": "One fixed original facet 46 with approved brighter cyan-blue material; no geometry or extra marker",
+  "directions": {
+    "000": {
+      "expected": "up",
+      "observed": "up",
+      "verdict": "pass",
+      "evidence": "The saturated cyan triangle lies above the star middle, between darker upper-left faces and a pale upper-right face."
+    },
+    "022.5": {
+      "expected": "up-right",
+      "observed": "up-right",
+      "verdict": "pass",
+      "evidence": "The cyan triangle stays above center and moves slightly to the right; its rightward offset is smaller than the upward offset."
+    },
+    "045": {
+      "expected": "up-right",
+      "observed": "up-right",
+      "verdict": "pass",
+      "evidence": "The cyan triangle occupies the upper-right central area, visibly above and right of the star middle."
+    },
+    "067.5": {
+      "expected": "up-right",
+      "observed": "up-right",
+      "verdict": "warning",
+      "evidence": "The cyan triangle is mostly right and slightly above the middle; its tip and centroid remain in that quadrant.",
+      "blind_review": "One minor axis was ambiguous by strict majority; the labeled full clockwise family confirms both intended offsets and no reversal."
+    },
+    "090": {
+      "expected": "right",
+      "observed": "right",
+      "verdict": "pass",
+      "evidence": "The saturated cyan wedge is on the right of the dark central facet convergence, clearly distinct from the pale outer faces."
+    },
+    "112.5": {
+      "expected": "down-right",
+      "observed": "down-right",
+      "verdict": "warning",
+      "evidence": "The cyan wedge shifts below the middle while remaining on the right, between dark upper facets and a pale lower face.",
+      "blind_review": "One minor axis was ambiguous by strict majority; the labeled full clockwise family confirms both intended offsets and no reversal."
+    },
+    "135": {
+      "expected": "down-right",
+      "observed": "down-right",
+      "verdict": "warning",
+      "evidence": "The cyan facet foreshortens to a narrow wedge below and right of center; both offsets remain visible in the ordered family."
+    },
+    "157.5": {
+      "expected": "down-right",
+      "observed": "down-right",
+      "verdict": "warning",
+      "evidence": "The cyan sliver sits mainly below center with a smaller rightward offset; foreshortening makes the horizontal component subtle.",
+      "blind_review": "One minor axis was ambiguous by strict majority; the labeled full clockwise family confirms both intended offsets and no reversal."
+    },
+    "180": {
+      "expected": "down",
+      "observed": "down",
+      "verdict": "pass",
+      "evidence": "The cyan sliver lies directly below the central dark faces and above the large pale lower triangle, providing a visible downward cue."
+    },
+    "202.5": {
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "warning",
+      "evidence": "The cyan sliver stays low and shifts to the left; the leftward component is small but follows continuously from the downward cardinal.",
+      "blind_review": "One minor axis was ambiguous by strict majority; the labeled full clockwise family confirms both intended offsets and no reversal."
+    },
+    "225": {
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "warning",
+      "evidence": "The cyan wedge is low and left of center, broadening as it turns toward the left; both offsets are visible though the facet is thin."
+    },
+    "247.5": {
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "pass",
+      "evidence": "The cyan wedge lies mostly left and slightly below the middle, with dark facets above and a pale triangle below."
+    },
+    "270": {
+      "expected": "left",
+      "observed": "left",
+      "verdict": "pass",
+      "evidence": "The saturated cyan triangle lies left of the central convergence and is visibly distinct from adjacent pale faces."
+    },
+    "292.5": {
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "evidence": "The cyan triangle remains left and shifts above the middle; lower-right dark facets separate it from the opposite side."
+    },
+    "315": {
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "evidence": "The cyan triangle occupies the upper-left central area, above and left of the middle, maintaining the same marked face."
+    },
+    "337.5": {
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "evidence": "The cyan triangle is mostly above center with a smaller leftward offset, smoothly approaching the upward pose."
+    }
+  },
+  "blind_summary": "Strict majority correctly identifies all four cardinals. One reviewer found every pose ambiguous; two correctly identified 24/28 tested axes. Four intermediate minor-axis readings remain reviewed warnings."
+}

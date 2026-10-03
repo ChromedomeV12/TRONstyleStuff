@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The saturated cyan facet sits on the upper-left side of A's central ridge and the upper-right side of B's ridge, giving a weak opposing turn cue."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A exposes the cyan inner face to the left of the central junction; B exposes it to the right. The adjacent pale facets reinforce the respective sides."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The luminous inner wedge opens toward A's left flank and B's right flank, with the dark facets on the opposite sides."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The cyan and pale front facets form a left-facing opening in A and a right-facing opening in B."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's cyan wedge and broad pale adjoining plane lie on the right of its central ridge; B presents those surfaces on the left."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Both appear angled downward, but A's exposed cyan plane extends toward the lower-right and B's toward the lower-left. This is a weak lateral cue."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Both show a dominant downward-facing pale triangle and a narrow cyan strip. The small lateral differences do not establish a reliable left or right aim."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "down",
+      "B": "up",
+      "reason": "A presents a broad bright triangular plane below its dark central facets; B presents the saturated cyan face above its central junction."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A's luminous front plane slopes below the central ridge, while B's cyan triangular face opens upward."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A's cyan strip and pale forward plane occupy the lower side of its central structure; B's exposed cyan face occupies the upper side."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Both have a cyan wedge on the right and nearby pale facets above and below. Their lateral orientation is clearer than a distinct upward or downward aim."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A has a prominent bright downward-pointing front triangle beneath the dark center; B has a cyan upper face above the central ridge."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A's pale forward triangle projects below its cyan band; B's cyan face is exposed above the central junction, suggesting an upward tilt."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A exposes a large pale lower face beneath the cyan wedge; B exposes a cyan upper-left face and has the stronger upward-facing facet arrangement. The cue is weaker than in vertical pairs 1 and 2."
+    }
+  ]
+}

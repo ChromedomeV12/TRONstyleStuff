@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Both have opposing lateral spikes and an upper cyan triangular facet. Different facet shading suggests rotation, but neither has an identifiable front or lateral aiming cue."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "The cyan and dark facets move relative to the surrounding spikes, but the radial silhouette supplies plausible points on both sides without identifying which is forward."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "The bright central triangular region and side spike overlaps differ. These show different orientations of a crystal, but do not establish screen-left versus screen-right aiming."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "There are sharp lateral projections on both sides of each pose. No consistently privileged tip, face, or front marker resolves their direction."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "The brighter lower facets and darker upper facets change their arrangement, but no visible feature clearly serves as a left- or right-facing front."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Both show a dark upper cluster and cyan lower wedge with broad spikes on either side. The different overlaps do not make either lateral direction readable."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "The silhouettes and exposed side facets differ slightly, but both remain radial pointed crystals with no clear lateral aiming axis."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "A has dark upper facets and bright lower facets; B exposes a larger cyan upper facet. This is a visible tilt or rotation difference, but the sheet does not establish which surface is the front, so up versus down remains uncertain."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "The bright facets occupy different parts of the body and the spike overlaps change. Without a recognizable front, these shading and projection changes do not uniquely indicate up or down."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "A exposes a narrow lower cyan wedge and B a larger upper cyan triangle. A colored facet alone does not identify an aiming direction, and both have strong upper and lower points."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "The central cyan facet and surrounding dark faces change projection, but neither pose contains an unambiguous vertical front or directional marker."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "A has a dark upper fan with a bright lower region while B shows a bright upper-center triangle. This distinguishes the rotations but leaves their semantic facing direction unresolved."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "The exposed facet areas differ substantially, yet both retain multiple competing upward and downward spikes. No single visible feature makes the vertical aim clear."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "A and B differ in cyan facet shape and dark facet overlap. Those changes indicate rotation, but do not identify a front from which up or down can be read confidently."
+    }
+  ]
+}

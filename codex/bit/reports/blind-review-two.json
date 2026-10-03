@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The saturated cyan face lies on the upper-left side of A's central facet junction and the upper-right side of B's junction; this is a weak directional cue because both are mostly upward-facing."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's saturated cyan face opens to the left of the central junction; B's opens to the right."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The cyan triangular surface and adjacent pale face are on the left in A and on the right in B."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The narrow cyan face extends leftward from A's central junction and rightward from B's."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "The cyan face and adjoining pale lower face lean toward the lower-right in A and lower-left in B."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "The thin cyan face sits beneath and right of A's central dark facets, and beneath and left of B's. The sideways cue is weaker than the downward cue."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Both show the cyan sliver and large pale face mainly below the dark central facets. Small sideways offsets do not give a dependable left-versus-right aiming cue."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "down",
+      "B": "up",
+      "reason": "A shows its cyan sliver and pale triangular face below the dark central facets; B shows a broad cyan face above the central junction."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A's colored facing surfaces are concentrated beneath the central dark cap; B's saturated cyan surface opens upward from the central junction."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A's cyan and pale surfaces open toward the lower-right; B's cyan face opens toward the upper-right."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "Both colored focal faces aim predominantly sideways. Their small height differences around the central junction do not establish a clear upward or downward aim."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A's cyan strip and pale face sit under its dark central cap; B's broad cyan face sits above its central facet junction."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A exposes cyan and pale triangular surfaces below the central dark facets; B exposes a broad cyan face on the upper-left side of its central junction."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A's cyan and adjacent pale faces open lower-left, while B's broad cyan face opens upper-left. B's upward cue is weaker because the surface also faces strongly sideways."
+    }
+  ]
+}
