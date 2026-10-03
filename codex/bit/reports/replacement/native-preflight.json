@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "file_size_bytes": 1473259,
+  "mime_type": "image/png",
+  "width": 1536,
+  "height": 2288,
+  "sprite_version": 2,
+  "cell_width": 192,
+  "cell_height": 208,
+  "frames_per_row": [
+    6,
+    8,
+    8,
+    4,
+    5,
+    8,
+    6,
+    6,
+    6,
+    8,
+    8
+  ],
+  "errors": [],
+  "source": "Actual Pets MCP validate_pet_spritesheet result; no creation session yet.",
+  "sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862"
+}

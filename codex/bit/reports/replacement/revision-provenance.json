@@ -1,0 +1,8 @@
+{
+  "old_sha256": "f429c9ea76cc8e6cd84e1dcdff65cbaa67731def9232e6dcf626e384f6793870",
+  "new_sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862",
+  "rows_1_through_10_pixel_identical": true,
+  "look_review_reused": "Historical three-isolated-reviewer majority; applies to exactly identical look pixels. No new blind review claimed.",
+  "idle_change": "Complete approved source row, rigid angle multiplied by three; same source mesh, timing, bob, material and frame count.",
+  "source_strip_sha256": "e64d72bc21969a432b44a7bcf4964015f2865567e98e365a96e52da9a411b7c7"
+}

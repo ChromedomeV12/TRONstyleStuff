@@ -9,7 +9,7 @@ This repository continues the history of `vlc-tokyo-night-skin` and brings the r
 | [VLC](vlc/) | TRON skin, installable bundles, build tools, Waves/Orbit visualizations, and playback checks |
 | [Obsidian](obsidian/) | Tron Grid theme, manifest, and packaged release |
 | [Codex desktop](codex/) | Theme imports and optional CSS divider launcher in `divider-test/` |
-| [Bit animated companion](codex/bit/) | Exact rigid mesh, published v2 pet atlas, reproducible renderer and approved idle draft |
+| [Bit animated companion](codex/bit/) | Exact rigid mesh, original atlas and validated replacement, reproducible builds and motion previews |
 | [Pi coding agent](pi/) | Native TRON theme, cyan borders, blue/orange syntax roles, and profile-preserving installer |
 | [Windows Terminal and Bash](terminal/) | ANSI palette, PowerShell input colors, Starship prompt, and minimal ble.sh configuration |
 | [Zen Browser](zen/) | Browser chrome CSS, install/restore scripts, and preview screenshots |

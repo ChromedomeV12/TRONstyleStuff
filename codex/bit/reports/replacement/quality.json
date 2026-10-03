@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "atlas": "replacement-build\\final\\spritesheet-extended.png",
+  "encoded_bytes": 1473259,
+  "sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862",
+  "jump": {
+    "idle_baseline": 175,
+    "jump_baselines": [
+      176,
+      170,
+      164,
+      170,
+      176
+    ],
+    "airborne_lift_pixels": 12,
+    "landing_delta_pixels": 1
+  },
+  "look_registration": {
+    "neutral_center_x": 95.0,
+    "look_centers_x": [
+      92.0,
+      93.0,
+      94.0,
+      93.0,
+      91.0,
+      89.0,
+      88.0,
+      89.0,
+      89.0,
+      89.0,
+      90.0,
+      91.0,
+      93.0,
+      94.0,
+      92.0,
+      92.0
+    ],
+    "look_widths": [
+      136,
+      142,
+      144,
+      144,
+      144,
+      144,
+      142,
+      138,
+      132,
+      132,
+      134,
+      138,
+      140,
+      142,
+      142,
+      140
+    ],
+    "maximum_center_drift_pixels": 7.0,
+    "maximum_width_ratio": 1.0909090909090908
+  },
+  "errors": [],
+  "warnings": [
+    "look direction 067.5 accepted with a reviewed warning",
+    "look direction 112.5 accepted with a reviewed warning",
+    "look direction 135 accepted with a reviewed warning",
+    "look direction 157.5 accepted with a reviewed warning",
+    "look direction 202.5 accepted with a reviewed warning",
+    "look direction 225 accepted with a reviewed warning",
+    "202.5 has transparent interior hole rows (y=60, y=159)",
+    "225 has transparent interior hole rows (y=57, y=58, y=161, y=162)",
+    "247.5 has transparent interior hole rows (y=52, y=53, y=54, y=161, +2 more)",
+    "270 has transparent interior hole rows (y=50, y=51, y=52, y=53, +4 more)"
+  ]
+}

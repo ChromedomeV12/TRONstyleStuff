@@ -14,7 +14,7 @@
     ]
   },
   "approved_idle_draft": {
-    "status": "approved-not-deployed",
+    "status": "approved-source; incorporated into validated replacement, not installed",
     "date": "2026-10-03",
     "source_only": true,
     "idle_angles_degrees": [
@@ -32,8 +32,7 @@
       140,
       140,
       320
-    ],
-    "deployment_blocker": "Current stored-sheet download returned HTTP403, including one authorized fresh-link retry after deselection. No alternate route or persisted update was attempted."
+    ]
   },
   "geometry": {
     "mesh": "assets/mesh.npz",
@@ -51,5 +50,21 @@
     "Mini widths24,32,48,64 are test sizes, not measured app dimensions.",
     "No native FPS control is supplied or promised.",
     "Private pet and Library IDs, signed links and installation metadata are omitted."
-  ]
+  ],
+  "validated_replacement": {
+    "status": "approved-and-validated-not-installed",
+    "date": "2026-10-03",
+    "atlas": "assets/replacement/spritesheet.png",
+    "sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862",
+    "encoded_bytes": 1473259,
+    "idle_source_sha256": "e64d72bc21969a432b44a7bcf4964015f2865567e98e365a96e52da9a411b7c7",
+    "idle_source": "assets/approved-idle-draft/idle-source-strip.png",
+    "idle_shared_registration_delta": [
+      -1,
+      0
+    ],
+    "non_idle_rows_pixel_identical": true,
+    "desktop_blocker": "Installed hatch-pet skill requires load_workspace_dependencies; the tool is unavailable in the creation session. Desktop packaging and activation have not run.",
+    "web_work_blocker": "Previous stored-sheet fetch returned HTTP 403; no retries or web pet mutation occurred during replacement preparation."
+  }
 }

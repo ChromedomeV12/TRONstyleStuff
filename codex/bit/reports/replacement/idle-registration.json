@@ -1,0 +1,8 @@
+{
+  "shared_translation": [
+    -1,
+    0
+  ],
+  "reason": "Preserve approved neutral registration after whole-row extraction; no independent frame shifts or resizing.",
+  "neutral_pixel_identical": true
+}

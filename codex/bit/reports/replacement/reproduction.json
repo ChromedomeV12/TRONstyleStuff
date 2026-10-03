@@ -1,0 +1,40 @@
+{
+  "verification": {
+    "ok": true,
+    "published_atlas_sha256": "f429c9ea76cc8e6cd84e1dcdff65cbaa67731def9232e6dcf626e384f6793870",
+    "mesh_max_edge_error": 4.440892098500626e-16,
+    "idle_source_pixel_parity": {
+      "published": true,
+      "approved-draft": true
+    },
+    "bundled_structural_validation": true,
+    "bundled_quality_validation": true,
+    "quality_warning_count": 10,
+    "replacement_atlas_sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862",
+    "replacement_bundled_structural_and_quality_validation": true,
+    "replacement_non_idle_rows_pixel_identical": true,
+    "replacement_neutral_frame_pixel_identical": true,
+    "scope": "Local retained assets only; no current-server verification or deployment."
+  },
+  "replacement_rebuild": {
+    "ok": true,
+    "variant": "replacement",
+    "matches_retained_encoded_bytes": true,
+    "sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862",
+    "rows_1_through_10_pixel_identical": true,
+    "idle_source_sha256": "e64d72bc21969a432b44a7bcf4964015f2865567e98e365a96e52da9a411b7c7"
+  },
+  "published_rebuild": {
+    "ok": true,
+    "variant": "published",
+    "matches_retained_encoded_bytes": true,
+    "sha256": "f429c9ea76cc8e6cd84e1dcdff65cbaa67731def9232e6dcf626e384f6793870"
+  },
+  "replacement_registration": {
+    "shared_translation": [
+      -1,
+      0
+    ],
+    "relative_motion_preserved": true
+  }
+}
