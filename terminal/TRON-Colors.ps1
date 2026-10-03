@@ -1,4 +1,11 @@
 # TRON input roles: white text/references, blue commands/keywords, orange numbers/types.
+# PowerShell's default directory style uses ANSI blue BACKGROUND (44), which
+# hides names when the terminal's foreground is also TRON blue. Use cyan text
+# with the terminal's normal background instead. Leave ls aliases untouched.
+if ($PSVersionTable.PSVersion -ge [version]'7.2') {
+    $PSStyle.FileInfo.Directory = "$([char]27)[49;38;2;0;238;238;1m"
+}
+
 if (Get-Module -ListAvailable PSReadLine) {
     Import-Module PSReadLine
     Set-PSReadLineOption -Colors @{

@@ -8,6 +8,10 @@ Merge the object in `TRON-Legacy.json` into your Windows Terminal settings' `sch
 
 Keep `TRON-Colors.ps1` in a stable location and dot-source it from your interactive PowerShell profile. It sets PSReadLine colors. The optional `starship.toml` is the accepted Windows prompt configuration; merge its colors with your own configuration if you have other customizations.
 
+On PowerShell 7.2+, this fragment also makes `Get-ChildItem` directory names bold cyan on the terminal's normal background. PowerShell's default blue directory background collides with this palette's blue default foreground, otherwise producing unreadable solid blocks. This changes only the directory formatting role; aliases, other file styles, and the terminal palette are preserved. After updating the installed fragment, open a new PowerShell tab or dot-source the fragment once in the current tab.
+
+Cross-environment check on 2026-10-03: Ubuntu's `ls --color=auto` uses `01;34` (bold blue foreground) for ordinary directories. The SSH/Mosh host's `ls` alias runs `eza`, which also emits blue foreground without a background for ordinary directories. The ordinary-directory and `/tmp` samples did not reproduce the PowerShell collision. Ubuntu retains its standard special-permission directory backgrounds. No shared ANSI palette or Linux configuration change was needed for this fix.
+
 | Input role | Color |
 | --- | --- |
 | Commands and keywords | #6FC3DF |
