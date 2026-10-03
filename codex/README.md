@@ -2,7 +2,7 @@
 
 The accepted ENCOM palette, exported on 2026-09-30. Optional cyan outlines and rounded double window frames are provided separately in [divider-test](divider-test/README.md).
 
-The [Bit animated companion](bit/README.md) has its own exact geometric renderer, original sprite atlas and a complete, validated replacement with stronger idle motion. Both atlases are reproducible; the replacement is not installed or activated.
+The [Bit animated companion](bit/README.md) has its own exact geometric renderer, original sprite atlas and a complete, validated replacement with stronger idle motion. Both atlases are reproducible; the replacement is active in ChatGPT Work, while Codex desktop installation remains blocked.
 
 | Role | Color |
 | --- | --- |

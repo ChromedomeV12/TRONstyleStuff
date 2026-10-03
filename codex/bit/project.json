@@ -52,7 +52,7 @@
     "Private pet and Library IDs, signed links and installation metadata are omitted."
   ],
   "validated_replacement": {
-    "status": "approved-and-validated-not-installed",
+    "status": "active-in-chatgpt-work; not-installed-in-codex-desktop",
     "date": "2026-10-03",
     "atlas": "assets/replacement/spritesheet.png",
     "sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862",
@@ -65,6 +65,6 @@
     ],
     "non_idle_rows_pixel_identical": true,
     "desktop_blocker": "Installed hatch-pet skill requires load_workspace_dependencies; the tool is unavailable in the creation session. Desktop packaging and activation have not run.",
-    "web_work_blocker": "Previous stored-sheet fetch returned HTTP 403; no retries or web pet mutation occurred during replacement preparation."
+    "web_work_status": "Authorized delete-and-replace completed on 2026-10-03: validated local source uploaded as new Bit, activated, old entry deleted, complete roster verified. No retry of the denied old-sheet download."
   }
 }

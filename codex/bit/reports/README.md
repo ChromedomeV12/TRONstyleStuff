@@ -18,4 +18,4 @@ These are retained outputs from the published 2026-10-02 build. Absolute local p
 
 The look pixels are unchanged, so the historical three isolated reviews above remain the evidence. `replacement/blind-validation.json` is the bundled validator rerun over those existing verdicts, not a claim that new reviewers were used. `replacement/reproduction.json` records the independent repository rebuild and verification of this exact replacement.
 
-The replacement is approved and validated but not installed. Native preflight and offline reproduction do not substitute for the separate Codex desktop runtime or installation workflow.
+These reports record pre-deployment validation. The replacement was subsequently created and activated in ChatGPT Work; private lifecycle receipts are kept outside Git. It remains uninstalled in Codex desktop. Native preflight and offline reproduction do not substitute for the separate desktop runtime or installation workflow.
