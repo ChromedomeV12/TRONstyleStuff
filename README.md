@@ -10,6 +10,7 @@ This repository continues the history of `vlc-tokyo-night-skin` and brings the r
 | [Obsidian](obsidian/) | Tron Grid theme, manifest, and packaged release |
 | [Codex desktop](codex/) | Theme imports and optional CSS divider launcher in `divider-test/` |
 | [Pi coding agent](pi/) | Native TRON theme, cyan borders, blue/orange syntax roles, and profile-preserving installer |
+| [Flow Launcher](flow-launcher/) | Native TRON XAML theme with cyan outline, orange query matches, and an installer |
 | [Windows Terminal and Bash](terminal/) | ANSI palette, PowerShell input colors, Starship prompt, and minimal ble.sh configuration |
 | [Zen Browser](zen/) | Browser chrome CSS, install/restore scripts, and preview screenshots |
 | [Dark Reader](darkreader/) | General TRON web-content preset for Zen, CSS accents, and export-preserving import helper |
