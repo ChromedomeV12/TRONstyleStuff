@@ -17,7 +17,7 @@ Thinking-level borders progress through blue and cyan; high reasoning levels do 
 
 Pi exposes one Markdown heading color, so all heading levels share cyan. Tool titles are soft white. The terminal controls the main canvas and unstyled input foreground; use the existing TRON Legacy terminal palette (`#0D1117` background, soft-white foreground). Pi's theme controls message/tool panel backgrounds and HTML export backgrounds, not the terminal's global palette.
 
-Completed tool panels, including edit diffs, use the blue-black `successBg` (`#101E29`). The earlier green `#102824` filled the entire successful-tool container: it was our `toolSuccessBg` role, not an unchangeable terminal color. Verified in Pi 1.0.2's `tool-execution.js`, where pending/error/success select their respective background roles. Changing `toolDiffAdded` affects text, not this panel. Separately, Pi's `diff.js` renders changed words with inverse video; those small highlight blocks swap foreground/background and have no independent theme background role. This theme leaves Pi's renderer intact and retains green/coral added/removed text.
+Completed tool panels, including edit diffs, use dark green `successBg` (`#102824`), retained by user preference as a success cue. This is the `toolSuccessBg` role, not an unchangeable terminal color. Verified in Pi 1.0.2's `tool-execution.js`, where pending/error/success select their respective background roles. Changing `toolDiffAdded` affects text, not this panel. Separately, Pi's `diff.js` renders changed words with inverse video; those small highlight blocks swap foreground/background and have no independent theme background role. This theme leaves Pi's renderer intact and retains green/coral added/removed text.
 
 ## Install or update
 
