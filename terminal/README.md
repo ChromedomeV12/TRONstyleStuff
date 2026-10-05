@@ -4,6 +4,8 @@ The accepted palette and input roles, collected without changing existing instal
 
 ## Windows Terminal and PowerShell
 
+The optional [ENCOM corner background](backgrounds/) supplies a transparent, bottom-right logo and a matching `#050E14` full-canvas image, with a Windows Terminal settings fragment.
+
 Merge the object in `TRON-Legacy.json` into your Windows Terminal settings' `schemes` array and select **TRON Legacy** for the desired profiles. Do not replace your complete settings file with this scheme object.
 
 Keep `TRON-Colors.ps1` in a stable location and dot-source it from your interactive PowerShell profile. It sets PSReadLine colors. The optional `starship.toml` is the accepted Windows prompt configuration; merge its colors with your own configuration if you have other customizations.
