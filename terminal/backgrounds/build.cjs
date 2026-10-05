@@ -28,6 +28,17 @@ async function main() {
     await page.screenshot({ path: path.join(__dirname, 'encom-background-1920x1080.png') });
     await page.setViewportSize({ width: 960, height: 540 });
     await page.screenshot({ path: path.join(__dirname, 'preview.png') });
+    // A full wordmark is unreadable in a tab; use its E as a compact monogram.
+    const iconDir = path.resolve(__dirname, '../icons');
+    fs.mkdirSync(iconDir, { recursive: true });
+    await page.setViewportSize({ width: 64, height: 64 });
+    await page.evaluate(() => {
+      document.body.style.background = 'transparent';
+      const mark = document.querySelector('.mark');
+      mark.textContent = 'E';
+      mark.style.cssText = 'position:absolute; inset:6px; padding:0; display:flex; align-items:center; justify-content:center; font-size:36px; border-width:3px; border-radius:8px 0 0 8px;';
+    });
+    await page.screenshot({ path: path.join(iconDir, 'encom-icon.png'), omitBackground: true });
     console.log(JSON.stringify({ background: palette.background, sticker: [320, 128], logoBounds: bounds }));
   } finally { await browser.close(); }
 }
