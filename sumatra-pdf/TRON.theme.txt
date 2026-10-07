@@ -1,0 +1,10 @@
+# Add this entry inside the Themes array; select with Theme = TRON.
+# Native SumatraPDF 3.6 / 3.6.1 fields only.
+[
+    Name = TRON
+    TextColor = #D8E1DD
+    BackgroundColor = #050E14
+    ControlBackgroundColor = #0B202B
+    LinkColor = #78DDFF
+    ColorizeControls = true
+]
