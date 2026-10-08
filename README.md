@@ -13,6 +13,7 @@ This repository continues the history of `vlc-tokyo-night-skin` and brings the r
 | [Flow Launcher](flow-launcher/) | Native TRON XAML theme with cyan outline, orange query matches, and an installer |
 | [SumatraPDF](sumatra-pdf/) | Native TRON reader theme, orange selection highlights, and a settings-preserving installer |
 | [Windows Terminal and Bash](terminal/) | ANSI palette, PowerShell input colors, Starship prompt, and minimal ble.sh configuration |
+| [Lazygit](lazygit/) | Native TRON colors with readable dark selections, cyan borders, and orange accents |
 | [Zen Browser](zen/) | Browser chrome CSS, install/restore scripts, and preview screenshots |
 | [Dark Reader](darkreader/) | General TRON web-content preset for Zen, CSS accents, and export-preserving import helper |
 | [Wallpapers](wallpapers/) | Shanghai TRON wallpaper variants, accepted image, grading scripts, and previews |
