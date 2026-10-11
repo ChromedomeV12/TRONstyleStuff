@@ -8,6 +8,7 @@ This repository continues the history of `vlc-tokyo-night-skin` and brings the r
 | --- | --- |
 | [VLC](vlc/) | TRON skin, installable bundles, build tools, Waves/Orbit visualizations, and playback checks |
 | [Obsidian](obsidian/) | Tron Grid theme, manifest, and packaged release |
+| [Zed](zed/) | TRON native IDE theme adapted from Tron Legacy, with cyan dividers, orange calls, and matching terminal colors |
 | [Codex desktop](codex/) | Theme imports and optional CSS divider launcher in `divider-test/` |
 | [Pi coding agent](pi/) | Native TRON theme, cyan borders, blue/orange syntax roles, and profile-preserving installer |
 | [Flow Launcher](flow-launcher/) | Native TRON XAML theme with cyan outline, orange query matches, and an installer |

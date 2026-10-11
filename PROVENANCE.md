@@ -1,5 +1,7 @@
 # Sources and licensing
 
+- `zed/TRON.json` adapts the dark theme from [bcomnes/zed-theme-tron-legacy](https://github.com/bcomnes/zed-theme-tron-legacy), commit `3fd2b39d7a0769d5842e23d182f9a4a88bc6e634`. Copyright (c) 2024 Bret Comnes; its MIT license is retained in `zed/LICENSE`. Palette and role changes follow this collection's ENCOM design.
+
 - VLC continues the original `ChromedomeV12/vlc-tokyo-night-skin` Git history from commit `ce8766204bec76a2c8c7e7fec85ebd26851efe81`, with the later local TRON work consolidated under `vlc/`. Its license is retained in `vlc/LICENSE`.
 - Obsidian, Codex, Terminal/Bash, and Zen contain the accepted local TRON customization work as of 2026-10-01. Existing project licenses and credits are retained where supplied.
 - `encom-boardroom/` is a Git submodule of the existing [ChromedomeV12/encom-boardroom fork](https://github.com/ChromedomeV12/encom-boardroom), originally based on `arscan/encom-boardroom`. Its history, upstream relationship, attribution, and deployment remain in that separate repository. The collection pins commit `abe3b1a637da7e26410425067a5c2f15b6e9f8c1` when establishing the submodule; Git records subsequent pointer updates. The earlier copied snapshot remains recoverable from this collection's history.
