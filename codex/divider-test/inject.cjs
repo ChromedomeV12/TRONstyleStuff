@@ -11,7 +11,6 @@ function applyStyle(css, remove = false) {
   }
   if (!document.querySelector('[data-app-shell-frame]')) throw Error('No Codex app shell found.');
   const targets = document.querySelectorAll('[data-app-shell-main-surface="default"]');
-  if (!targets.length) throw Error('No supported main chat surface found. Open a chat first.');
   const style = existing || document.createElement('style');
   style.id = 'tron-divider-session-test';
   style.textContent = css;
@@ -19,9 +18,9 @@ function applyStyle(css, remove = false) {
   return { applied: true, mainSurfaces: targets.length, styleCount: document.querySelectorAll('#tron-divider-session-test').length };
 }
 
-async function connect(url) {
+async function connect(url, port = 9339) {
   const parsed = new URL(url);
-  if (parsed.protocol !== 'ws:' || parsed.hostname !== '127.0.0.1' || parsed.port !== '9339') {
+  if (parsed.protocol !== 'ws:' || parsed.hostname !== '127.0.0.1' || parsed.port !== String(port)) {
     throw Error('Refusing a nonlocal or unexpected debugging endpoint.');
   }
   const socket = new WebSocket(url);
@@ -56,19 +55,26 @@ async function connect(url) {
 
 async function main() {
   const remove = process.argv.includes('--restore');
+  const portArg = process.argv.find(arg => arg.startsWith('--port='));
+  let savedPort;
+  if (remove && !portArg && process.env.LOCALAPPDATA) {
+    try { savedPort = JSON.parse(fs.readFileSync(path.join(process.env.LOCALAPPDATA, 'TRONstyleStuff', 'ChatGPT', 'debug-session.json'), 'utf8').replace(/^\uFEFF/, '')).port; } catch {}
+  }
+  const port = Number(portArg?.slice(7) || savedPort || 9339);
+  if (!Number.isInteger(port) || port < 1024 || port > 65535) throw Error('Invalid local debugging port.');
   const css = fs.readFileSync(path.join(__dirname, 'TRON-dividers.css'), 'utf8');
   const deadline = Date.now() + (remove ? 5000 : 45000);
   let lastError;
   do {
     try {
-      const response = await fetch('http://127.0.0.1:9339/json/list', { signal: AbortSignal.timeout(2000) });
+      const response = await fetch(`http://127.0.0.1:${port}/json/list`, { signal: AbortSignal.timeout(2000) });
       if (!response.ok) throw Error('Debug target lookup failed.');
       const targets = await response.json();
       // Never inject into websites, tools, pets, or unrelated browser tabs.
       const candidates = targets.filter(t => t.type === 'page' && /^app:\/\//.test(t.url) && t.webSocketDebuggerUrl);
       let applied = 0;
       for (const target of candidates) {
-        const connection = await connect(target.webSocketDebuggerUrl);
+        const connection = await connect(target.webSocketDebuggerUrl, port);
         try {
           const probe = await connection.evaluate('Boolean(document.querySelector("[data-app-shell-frame]"))');
           if (!probe.result?.value) continue;
