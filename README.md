@@ -11,6 +11,7 @@ This repository continues the history of `vlc-tokyo-night-skin` and brings the r
 | [Zed](zed/) | TRON native IDE theme adapted from Tron Legacy, with cyan dividers, orange calls, and matching terminal colors |
 | [Codex desktop](codex/) | Theme imports and optional CSS divider launcher in `divider-test/` |
 | [Pi coding agent](pi/) | Native TRON theme, cyan borders, blue/orange syntax roles, and profile-preserving installer |
+| [Oh-My-Pi](oh-my-pi/) | Native TRON coding-agent theme with cyan frames, orange syntax accents, and status-line colors |
 | [Flow Launcher](flow-launcher/) | Native TRON XAML theme with cyan outline, orange query matches, and an installer |
 | [SumatraPDF](sumatra-pdf/) | Native TRON reader theme, orange selection highlights, and a settings-preserving installer |
 | [Windows Terminal and Bash](terminal/) | ANSI palette, PowerShell input colors, Starship prompt, and minimal ble.sh configuration |

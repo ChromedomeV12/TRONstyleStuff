@@ -1,5 +1,7 @@
 # Sources and licensing
 
+- `oh-my-pi/TRON.json` adapts the bundled `dark-abyss` role layout from `@oh-my-pi/pi-coding-agent` 17.4.2. The package's MIT license is retained in `oh-my-pi/LICENSE`, including copyright notices for Mario Zechner, Can Bölük, and Stencil Labs. Palette and syntax/status remapping follow the collection's TRON colors.
+
 - `zed/TRON.json` adapts the dark theme from [bcomnes/zed-theme-tron-legacy](https://github.com/bcomnes/zed-theme-tron-legacy), commit `3fd2b39d7a0769d5842e23d182f9a4a88bc6e634`. Copyright (c) 2024 Bret Comnes; its MIT license is retained in `zed/LICENSE`. Palette and role changes follow this collection's ENCOM design.
 
 - VLC continues the original `ChromedomeV12/vlc-tokyo-night-skin` Git history from commit `ce8766204bec76a2c8c7e7fec85ebd26851efe81`, with the later local TRON work consolidated under `vlc/`. Its license is retained in `vlc/LICENSE`.
