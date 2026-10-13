@@ -1,5 +1,7 @@
 # Sources and licensing
 
+- `opencode/TRON.json` adapts the complete v2 default theme from [anomalyco/opencode](https://github.com/anomalyco/opencode/blob/v2.0.27/packages/tui/src/theme/assets/v2/opencode.json), release `v2.0.27`. The upstream MIT license, copyright (c) 2025 opencode, is retained in `opencode/LICENSE`. Palette, syntax, interaction states, and diff colors were remapped for TRON.
+
 - `oh-my-pi/TRON.json` adapts the bundled `dark-abyss` role layout from `@oh-my-pi/pi-coding-agent` 17.4.2. The package's MIT license is retained in `oh-my-pi/LICENSE`, including copyright notices for Mario Zechner, Can Bölük, and Stencil Labs. Palette and syntax/status remapping follow the collection's TRON colors.
 
 - `zed/TRON.json` adapts the dark theme from [bcomnes/zed-theme-tron-legacy](https://github.com/bcomnes/zed-theme-tron-legacy), commit `3fd2b39d7a0769d5842e23d182f9a4a88bc6e634`. Copyright (c) 2024 Bret Comnes; its MIT license is retained in `zed/LICENSE`. Palette and role changes follow this collection's ENCOM design.
