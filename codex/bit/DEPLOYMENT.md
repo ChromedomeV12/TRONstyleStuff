@@ -1,12 +1,14 @@
 # Deployment status
 
-As of 2026-10-03, the full replacement is **active in ChatGPT Work, but not installed in Codex desktop**. `assets/replacement/spritesheet.png` contains the approved ±3° idle revision. The original atlas remains in `assets/published/` for comparison and recovery.
+As of 2026-10-13, the full replacement is active in ChatGPT Work and its validated local copy is installed for Codex desktop. `assets/replacement/spritesheet.png` contains the approved ±3° idle revision. The original atlas remains in `assets/published/` for comparison and recovery.
 
-## Codex desktop: separate installation remains blocked
+## Codex desktop: local Bit installed
 
-The user requested Codex desktop installation before explicitly selecting the ChatGPT Pets app for the subsequent replacement. Desktop's bundled `hatch-pet` skill requires `load_workspace_dependencies` before running its scripts and explicitly says to stop when that runtime is unavailable. The creation session did not expose that tool, so desktop packaging and activation stopped. No desktop `pet.json` package was installed. The skill does not document a user-facing procedure that guarantees the missing tool will become available.
+The bundled `hatch-pet` runtime became available. The approved replacement PNG was SHA-256 checked against the retained source, then packaged as a lossless WebP. Codex desktop v2 requires a neutral frame at idle row 0, column 6; the approved first idle frame was copied into this otherwise empty reserved cell. All existing art cells remain pixel-identical. The app's `validate_atlas.py --require-v2` passed without errors or warnings.
 
-Do not substitute ChatGPT Work pet controls for this desktop target. Resume installation only in an environment with the required desktop workflow available, using the validated source and exact atlas as inputs and completing any desktop-specific checks. This repository's offline Work Pets reproduction commands do not satisfy or bypass that runtime requirement.
+The package is at `~/.codex/pets/bit/{pet.json,spritesheet.webp}` and desktop `selected-avatar-id` is `custom:bit`. The previous config is backed up under `~/.codex/backups/bit-local-selection-20261013-155516-209300/`. The app's own loader assigns this package the ID `custom:bit`. A restart may be needed for the running desktop window to reload its pet; visual confirmation in that window remains pending. The ChatGPT Work cloud pet and its stable ID were left intact.
+
+The earlier Work-mode fallback had a separate cause: the desktop's cached cloud Bit artwork URL returned HTTP 404, although its saved selection still named Bit. The local package avoids that artwork route in the desktop pet selector. This does not establish that the cloud artwork URL itself is fixed.
 
 ## ChatGPT Work: replacement completed
 

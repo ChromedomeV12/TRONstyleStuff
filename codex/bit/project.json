@@ -52,7 +52,7 @@
     "Private pet and Library IDs, signed links and installation metadata are omitted."
   ],
   "validated_replacement": {
-    "status": "active-in-chatgpt-work; not-installed-in-codex-desktop",
+    "status": "active-in-chatgpt-work; installed-and-selected-locally-in-codex-desktop; visual-confirmation-pending",
     "date": "2026-10-03",
     "atlas": "assets/replacement/spritesheet.png",
     "sha256": "3eeea19ed7f822b7b77e48149f2fcf6613ce0e5711d8d3a38ba5ed973cafd862",
@@ -64,7 +64,7 @@
       0
     ],
     "non_idle_rows_pixel_identical": true,
-    "desktop_blocker": "Installed hatch-pet skill requires load_workspace_dependencies; the tool is unavailable in the creation session. Desktop packaging and activation have not run.",
+    "desktop_install": "Installed 2026-10-13 as custom:bit from a lossless WebP copy of the approved replacement; reserved neutral frame populated from approved idle frame 0. Bundled hatch-pet v2 validation passed; running-window visual confirmation pending.",
     "web_work_status": "Authorized delete-and-replace completed on 2026-10-03: validated local source uploaded as new Bit, activated, old entry deleted, complete roster verified. No retry of the denied old-sheet download."
   }
 }

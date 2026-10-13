@@ -10,13 +10,13 @@ A floating, faceted blue-white companion inspired by Bit from TRON, with no face
 | --- | --- | --- |
 | [Published snapshot](assets/published/) | Original full atlas and previews | Exact retained upload used for successful ChatGPT Work pet creation on 2026-10-02; preserved for comparison and recovery |
 | [Approved idle source](assets/approved-idle-draft/) | Stronger idle source strip and comparisons | Approved on 2026-10-03; now incorporated into the replacement |
-| [Validated replacement](assets/replacement/) | Full v2 atlas, nine state GIFs, all-state GIF/MP4, transition preview, contact sheet and stills | **Active in ChatGPT Work; not installed in Codex desktop** |
+| [Validated replacement](assets/replacement/) | Full v2 atlas, nine state GIFs, all-state GIF/MP4, transition preview, contact sheet and stills | **Active in ChatGPT Work; packaged and selected locally for Codex desktop** |
 
 The replacement increases idle rotation from approximately ±1° to ±3°. Its six poses, 1.1-second timing, bob, lighting, palette, facet cue and mesh remain unchanged. One translation of the complete extracted idle row by one pixel to the left preserves the original neutral registration. All non-idle animation and look-direction rows are pixel-identical to the published atlas.
 
 ![Previous idle on the left; approved source-only draft on the right](assets/approved-idle-draft/comparison.gif)
 
-The stronger motion is easier to see at 32–64 px and remains subtle at 24 px. These are test cell sizes, not measured app dimensions. This changes amplitude, not FPS. See [deployment status](DEPLOYMENT.md) for the successful ChatGPT Work replacement and separate Codex desktop blocker.
+The stronger motion is easier to see at 32–64 px and remains subtle at 24 px. These are test cell sizes, not measured app dimensions. This changes amplitude, not FPS. See [deployment status](DEPLOYMENT.md) for the ChatGPT Work and desktop installation details.
 
 ## Reproduce locally
 
