@@ -2,8 +2,6 @@
 
 The accepted palette and input roles, collected without changing existing installations. Windows Terminal supplies the ANSI palette; each shell controls its own syntax highlighting. SSH hosts require their own shell configuration.
 
-The Ubuntu prompt now has a native [TRON Oh My Posh configuration](oh-my-posh/) with cyan ENCOM framing and a Starship fallback. Its installer replaces only prompt initialization; the highlighting fragments below remain independent.
-
 ## Windows Terminal and PowerShell
 
 The optional [ENCOM corner background](backgrounds/) supplies a transparent, bottom-right logo and a matching `#050E14` full-canvas image, with a Windows Terminal settings fragment.
@@ -37,7 +35,7 @@ The original setup uses `linux/bashrc-header.sh` before interactive initializati
 
 These fragments intentionally remove Windows drive directories from the interactive WSL PATH, before and after startup, to avoid slow executable discovery. Linux paths remain. This reflects the accepted setup where bare-name lookup of Windows executables was not needed; inspect the fragments before adopting them on a different machine. They do not modify `/etc/wsl.conf`.
 
-`TRON_BASH_HIGHLIGHT=0 bash` skips the add-on in a child shell; that shell still inherits its parent's current PATH. The highlighting fragments do not modify fastfetch or prompt engines. The optional Oh My Posh installer has separate prompt setup and rollback instructions. Personal backup paths and installation records stay outside Git.
+`TRON_BASH_HIGHLIGHT=0 bash` skips the add-on in a child shell; that shell still inherits its parent's current PATH. Existing fastfetch and Ubuntu Starship configurations are not included or modified. Personal backup paths and installation records remain in the original local workspace.
 
 The recorded PTY trial in `linux/performance-trial.md` measured typing at about 14-15 ms median and 29-31 ms p95. These are historical measurements, not a guarantee for another machine.
 
