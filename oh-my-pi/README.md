@@ -32,12 +32,4 @@ Installed and selected in Oh-My-Pi 18.10.3. Its native config command read back 
 
 The installed source package's 17.4.2 runtime schema/loader validated the JSON and rendered all 67 foreground/background roles in truecolor. This source-package check is distinct from the newer standalone executable; full visual review inside the 18.10.3 TUI remains to be done. Language capture and individual tool renderer behavior may affect where colors appear.
 
-## Encom OMP startup banner
-
-Run `python3 install-branding.py` from this directory in WSL Ubuntu. It installs a separate extension at `~/.omp/agent/extensions/encom-omp/` and sets `startup.quiet` with the native `omp config` command. The built-in startup message needs to be quiet for the ENCOM banner to occupy that space. The installer saves the previous config and extension under `~/.omp/agent/backups/encom-branding-<timestamp>/`; it does not replace the `TRON.json` theme or any built-in theme.
-
-On the empty session screen, the extension keeps Oh-My-Pi's original five-row block Pi mark and rounded welcome-box style. It changes the title to **Encom OMP**, colors the mark cyan, and uses a small orange status dot. It shrinks to text in narrow terminals and disappears when the first agent turn starts. This is display-only: it adds nothing to the conversation or model context. Remove `extensions/encom-omp` and restore the backed-up `config.yml` to undo it, or set `startup.quiet false` if that was the previous value.
-
-The current Oh-My-Pi header API does not render a custom header, so the banner uses its extension widget API. Tested in the real Oh-My-Pi 18.10.3 startup as well as at narrow and wide terminal widths. The shell setup, native binary, selected TRON theme, and original bundled themes were checked unchanged.
-
-References: [official Oh-My-Pi theming guide](https://github.com/can1357/oh-my-pi/blob/main/docs/theme.md), [current theme schema](https://github.com/can1357/oh-my-pi/blob/main/packages/tui/src/theme/theme-schema.json).
+Startup artwork uses the original harness banner. The custom TRON color theme remains separate.

@@ -37,10 +37,4 @@ Validated with the exact `ThemeDocument` schema from OpenCode v2.0.27 and its pi
 
 Installed copies match the source in Windows and WSL Ubuntu, both running OpenCode v2.0.27. Parsed CLI settings differ only in the selected theme name/mode. Provider configuration, Oh-My-Pi settings, and existing shell files were checked unchanged. Full visual review in a running OpenCode TUI remains pending.
 
-## EncomCode startup banner
-
-Run `python3 install-branding.py` on WSL/Linux or `python install-branding.py` on Windows. The installer puts a separate CLI plugin in `~/.config/opencode/plugins/encomcode/`, adds its path to `cli.json.plugins`, and backs up the previous settings and plugin under `~/.config/opencode/backups/encom-branding-<timestamp>/`. It leaves the selected `TRON.json` theme, server/provider config, and built-in themes alone. Restart OpenCode to load the plugin.
-
-On OpenCode's home screen, the plugin replaces the stock logo with **ENCOM CODE** in OpenCode's original three-row half-block lettering style. The first word is blue, the second cyan. As with the stock logo, the words sit side by side in wide terminals and stack in narrower ones; very small terminals use plain **EncomCode** text. It does not affect the composer or chat transcript. Removing the plugin path from `cli.json.plugins` and the `plugins/encomcode/` directory restores the stock logo; the backup contains the previous settings.
-
-OpenCode v2.0.27 has no dedicated logo replacement setting. This plugin recognizes the stock logo in the native render tree and uses the app's existing drawing classes; it adds no renderer dependency, background process, or binary patch. If a future OpenCode release changes the original logo structure, the plugin leaves the stock logo in place until its signatures are updated. The banner passed a native renderer test for layout, navigation, and cleanup, and was visible in a real WSL OpenCode startup. The Windows and WSL plugin installations were verified against the prior settings, native binaries, and custom themes.
+Startup artwork uses the original harness banner. The custom TRON color theme remains separate.
