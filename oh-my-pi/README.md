@@ -32,4 +32,12 @@ Installed and selected in Oh-My-Pi 18.10.3. Its native config command read back 
 
 The installed source package's 17.4.2 runtime schema/loader validated the JSON and rendered all 67 foreground/background roles in truecolor. This source-package check is distinct from the newer standalone executable; full visual review inside the 18.10.3 TUI remains to be done. Language capture and individual tool renderer behavior may affect where colors appear.
 
-Startup artwork uses the original harness banner. The custom TRON color theme remains separate.
+## Original animated logo colors
+
+Run `python3 install-logo-colors.py` to recolor the original Oh-My-Pi logo. The installer registers `extensions/tron-logo-colors.ts` through the native `extensions` setting and saves a config backup. Your normal `omp` command loads it; no launcher or shell change is needed. This hook is verified for the standalone executable **18.10.3**, whose welcome renderer differs from the older installed source package.
+
+The native logo, wordmark, layout, animation clock, easing, duration, and shine remain in place. The hook changes only the Pi mark's per-character foreground escapes: its three gradient stops become blue `#237EB5`, Legacy blue `#6FC3DF`, and cyan `#00EEEE`. The native white shine is carried onto that gradient; the ordinary white wordmark and version text are preserved. Indexed-color terminals get a blue/cyan ramp too. The original first frame can appear briefly before the session-start extension attaches.
+
+Oh-My-Pi does not expose this palette as a theme setting. The extension wraps the existing welcome component's renderer at runtime, with a zero-row widget providing lifecycle cleanup. It adds no animation timer, startup art, transcript content, or model request. Cached settled frames stay cached. The executable and bundled defaults are not patched. Future renderer changes may require updating this version-specific hook.
+
+Verified in a normal launch with the installed profile, plus checks of unchanged characters, wordmark, native animation method, shine, frame caching, and disposal. To remove it, delete its path from the config's `extensions` list and remove `extensions/tron-logo-colors.ts`, then restart OMP. The separate TRON theme can remain selected.

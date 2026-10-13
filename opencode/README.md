@@ -37,4 +37,12 @@ Validated with the exact `ThemeDocument` schema from OpenCode v2.0.27 and its pi
 
 Installed copies match the source in Windows and WSL Ubuntu, both running OpenCode v2.0.27. Parsed CLI settings differ only in the selected theme name/mode. Provider configuration, Oh-My-Pi settings, and existing shell files were checked unchanged. Full visual review in a running OpenCode TUI remains pending.
 
-Startup artwork uses the original harness banner. The custom TRON color theme remains separate.
+## Original logo colors
+
+Run `python3 install-logo-colors.py` on WSL/Linux or `python install-logo-colors.py` on Windows. This installs a CLI-only plugin under `plugins/tron-logo-colors/` and appends its path to `cli.json.plugins`, with a backup of the previous settings. Restart OpenCode normally to load it.
+
+The plugin recolors OpenCode's existing logo in place: the first word uses Legacy blue `#6FC3DF`, the second cyan `#00EEEE`, and the original inset shadows receive corresponding dark blue/cyan fills. Every letter, text node, layout group, and responsive arrangement remains native. It does not create replacement artwork or alter ordinary text colors.
+
+OpenCode v2.0.27 has no dedicated logo palette setting. The plugin recognizes its exact original logo structure and changes only the matched text nodes' foreground/background colors. If an update changes that structure, it leaves the native logo alone. Colors are restored on cleanup or when leaving the home screen. It uses existing frame events and skips settled nodes, with no additional timer, renderer dependency, service, or binary patch.
+
+Verified using the native renderer for identical characters/layout, shadows, composer preservation, and cleanup, followed by a real WSL OpenCode startup. Installed in Windows and WSL with both TRON theme files preserved. To remove it, delete its path from `cli.json.plugins` and remove `plugins/tron-logo-colors/`, then restart; the TRON theme can remain selected.
