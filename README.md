@@ -32,6 +32,12 @@ Future project notes: [eDEX-UI desktop utility, community forks, and tablet poss
 
 The full-resolution accepted wallpaper is [shanghai-tron-uprising.png](wallpapers/outputs/shanghai-tron-uprising.png).
 
+## Node.js utilities
+
+Use a patched Node.js runtime for the local injectors, checks, and image builders. The root `.node-version` selects 26.12.1 for version managers that support it. Activate that runtime before running the utilities and confirm `node --version`; if keeping another supported major, use 22.23.4 or later in 22.x, or 24.22.1 or later in 24.x. These versions include the [October security and eMudhra fixes](https://render.com/docs/advisory-emudhra).
+
+Installed shortcuts resolve Node from their own PATH, outside this checkout. Update that Node installation too, then reopen the terminal or restart the launcher and its dependent applications. Refresh the operating system certificate store for other HTTPS clients. Committing this version file does not update installed runtimes, application bundles, or the host certificate store.
+
 ## Working on the collection
 
 Each project keeps its own build or installation instructions. Installing one does not install the others. Personal profiles, installation manifests, backups, browser data, and debug logs are excluded. Existing installations and original workspaces are separate from this source collection.
